@@ -52,6 +52,7 @@ export default {
         heroGreen: "#d0e8c5",
         textheroBlue: "#2378b5",
         textheroGreen: "#4f6d34",
+        addbtn: "#fc8972",
       },
     },
   },
