@@ -5,7 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
-    <title>Vite App</title>
+    <title>JobTracker</title>
+    
   </head>
   <body>
     <header>
@@ -52,9 +53,9 @@
     </header>
     <main>
       <section id="hero">
-        <div class="mt-[120px] w-[1156px] ml-auto mr-auto mb-[120px]">
-          <ul class="flex flex-wrap gap-6 font-nunito">
-            <li class="min-h-[566px] bg-heroBlue relative">
+        <div class="mt-[120px] w-[1156px]  ml-auto mr-auto mb-[120px] ">
+          <ul class="grid grid-cols-2 gap-6 font-nunito">
+            <li class="min-h-[566px]  bg-heroBlue relative">
               <div class="ml-[25px] mt-[35px] text-left">
                 <h3
                   class="font-bold text-3xl leading-[43px] text-textheroBlue mb-[100px]"
@@ -78,7 +79,7 @@
                 </svg>
               </div>
             </li>
-            <li class="min-h-[566px] bg-heroGreen relative">
+            <li class="min-h-[566px]  bg-heroGreen relative">
               <div class="mr-[25px] mt-[35px] text-right">
                 <h3
                   class="font-bold text-3xl leading-[43px] text-textheroGreen mb-[100px]"
@@ -104,8 +105,8 @@
                 </svg>
               </div>
             </li>
-            <br />
-            <li class="min-h-[566px] bg-heroGreen relative">
+            
+            <li class="min-h-[566px]  bg-heroGreen relative">
               <div class="ml-[25px] mt-[35px] text-left">
                 <h3
                   class="font-bold text-3xl leading-[43px] text-textheroGreen mb-[100px]"
@@ -131,7 +132,7 @@
                 </svg>
               </div>
             </li>
-            <li class="h-[566px] bg-heroBlue relative">
+            <li class="min-h-[566px] bg-heroBlue relative">
               <div class="mr-[25px] mt-[35px] text-right">
                 <h3
                   class="font-bold text-3xl leading-[43px] text-textheroBlue mb-[100px]"
@@ -159,7 +160,7 @@
         </div>
       </section>
       <section id="add">
-        <div class="w-[1156px] flex gap-[134px] ml-auto mr-auto font-nunito font-medium text-[11px] leading-[15px] text-center">
+        <div class="w-[1156px] flex gap-[134px] ml-auto mr-auto font-nunito font-medium text-[11px] leading-[15px] text-center pb-[88px] mb-[120px]">
           <div>
             <div class="w-[144px] h-[30px] rounded-t-[7px] px-[7px] py-[14px] bg-addbtn flex justify-center items-center ">Редагувати вакансію</div>
             <div class="border-[2.33px] border-addbtn border-solid rounded-tr-[7px] rounded-br-[7px] rounded-bl-[7px] w-[566px] pt-[32px] pr-[14px] pb-[18px] pl-[14px]"> <img src="./src/assets/screen.jpg" alt=""></div>
@@ -176,6 +177,108 @@
             >
         </div>
         </div>
+      </section>
+      <section id="filters" > 
+<div class="relative ml-auto mr-auto w-[1026px] font-nunito" >
+        <div class="flex justify-center   ">
+            <img src="./src/assets/Eclipse.png" alt="elipse" class="w-[812px] h-[826px]">
+        </div>
+        <p class="absolute left-[270px] bottom-[330px] w-[486px] font-bold text-3xl leading-[43px] text-center text-text">Слідкуйте за статусом резюме, збирайте аналітику та систематизуйте процес</p>
+            <ul >
+              <li class="absolute top-[-79px] left-[350px] ">
+                <div class=" w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersBlue flex justify-center items-center font-medium text-md text-blackText shadow-filters">Відправлені</div>
+                <div class=" w-[326px] bg-white border-4 border-filtersBlue border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl ">
+                  <div class="bg-filtersBlue rounded-xl p-3 bg-opacity-40"> 
+                  <h2 class="font-medium text-m text-blackText">Junior UX/UI designer</h2>
+                  <p class="font-medium text-xs text-blackText">Ajax Systems</p>
+                  <div class="flex gap-1">
+                  <svg class="w-[24px] h-[24px] ">
+                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
+                  </svg>
+                  <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                  </div>
+                </div>
+                </div>
+              </li>
+              <li class="absolute right-[-19px] top-[150px]">
+                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersPerpule flex justify-center items-center font-medium text-md text-blackText shadow-filters">HR співбесіда</div>
+                <div class=" w-[326px] bg-white border-4 border-filtersPerpule border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
+                   <div class="bg-filtersPerpule rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">JUX/UI designer</h2>
+                  <p class="font-medium text-xs text-blackText">Epam</p>
+                 <div class="flex gap-1">
+                  <svg class="w-[24px] h-[24px] ">
+                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
+                  </svg>
+                  <p class="font-medium text-s text-blackText">Remote</p>
+                  </div>
+                </div>
+                </div>
+               
+              </li>
+              <li class="absolute left-[-19px] top-[150px]">
+                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filterslightGreen flex justify-center items-center font-medium text-md text-blackText shadow-filters">Збережені</div>
+                <div class=" w-[326px] bg-white border-4 border-filterslightGreen border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
+                   <div class="bg-filterslightGreen rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">Junior UX/UI designer</h2>
+                  <p class="font-medium text-xs text-blackText">Ajax Systems</p>
+                 <div class="flex gap-1">
+                  <svg class="w-[24px] h-[24px] ">
+                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
+                  </svg>
+                  <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                  </div>
+                </div>
+                </div>
+              </li>
+              <li class="absolute left-[-19px] top-[490px]">
+                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersRed flex justify-center items-center font-medium text-md text-blackText shadow-filters">Відмова</div>
+                <div class=" w-[326px] bg-white border-4 border-filtersRed border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
+                   <div class="bg-filtersRed rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">JUX/UI designer</h2>
+                  <p class="font-medium text-xs text-blackText">Epam</p>
+                 <div class="flex gap-1">
+                  <svg class="w-[24px] h-[24px] ">
+                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
+                  </svg>
+                  <p class="font-medium text-s text-blackText">Remote</p>
+                  </div>
+                </div>
+                </div>
+              </li>
+              <li class="absolute right-[-19px] top-[490px]">
+                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersGrey flex justify-center items-center font-medium text-md text-blackText shadow-filters">Технічна співбесіда</div>
+                <div class=" w-[326px] bg-white border-4 border-filtersGrey border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
+                   <div class="bg-filtersGrey rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">Junior/Trainee UX/UI designer</h2>
+                  <p class="font-medium text-xs text-blackText">Skelar</p>
+                 <div class="flex gap-1">
+                  <svg class="w-[24px] h-[24px] ">
+                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
+                  </svg>
+                  <p class="font-medium text-s text-blackText">Офіс Львів</p>
+                  </div>
+                </div>
+                </div>
+            </li>
+              <li class="absolute left-[350px] top-[720px] pb-[14px]">
+                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersGreen flex justify-center items-center font-medium text-md text-blackText shadow-filters">Офер</div>
+                <div class=" w-[326px] bg-white  border-4 border-filtersGreen border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
+                   <div class="bg-filtersGreen rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">Junior UX/UI designer</h2>
+                  <p class="font-medium text-xs text-blackText">Ajax Systems</p>
+                 <div class="flex gap-1">
+                  <svg class="w-[24px] h-[24px] ">
+                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
+                  </svg>
+                  <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                  </div>
+                </div>
+                </div>
+          </li>
+            </ul>
+            
+    </div>    
       </section>
     </main>
     <!-- <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>

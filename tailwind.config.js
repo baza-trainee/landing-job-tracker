@@ -40,6 +40,9 @@ export default {
       // => @media (min-width: 1440px) { ... }
     },
     extend: {
+      boxShadow: {
+        filters: "0 0 3px 0 rgba(0, 0, 0, 0.2)",
+      },
       colors: {
         backgroundMain: "#fdfeff",
         backgroundSecondary: "#eceff6",
@@ -53,6 +56,12 @@ export default {
         textheroBlue: "#2378b5",
         textheroGreen: "#4f6d34",
         addbtn: "#fc8972",
+        filtersBlue: "#c6e7ff",
+        filterslightGreen: "#d0e8c5",
+        filtersPerpule: "#cdc1ff",
+        filtersRed: "#fc8972",
+        filtersGrey: "#a6aebf",
+        filtersGreen: "#b1d690",
       },
     },
   },
