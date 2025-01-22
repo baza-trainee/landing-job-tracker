@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="font-nunito  bg-bg-vector bg-no-repeat bg-cover">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -8,11 +8,11 @@
     <title>JobTracker</title>
     
   </head>
-  <body>
+  <body  class="font-nunito  bg-bg-vector bg-no-repeat bg-cover">
 
     <header>
         <div
-          class="container  relative top-[-20px] mx-auto mt-[90px] "
+          class="container px-[118px]  relative top-[-20px] mx-auto mt-[90px] "
         >
         <div class=" absolute left-[-100px] top-[-68px]">
           <svg width="94" height="77">
@@ -54,7 +54,7 @@
     </header>
     <main>
       <section id="hero">
-        <div class="mt-[120px] container  mx-auto mb-[120px] ">
+        <div class="mt-[120px] container px-[118px]  mx-auto mb-[120px] ">
           <ul class="grid grid-cols-2 gap-6 ">
             <li class="min-h-[566px]  bg-heroBlue relative">
               <div class="ml-[25px] mt-[35px] text-left">
@@ -161,7 +161,7 @@
         </div>
       </section>
       <section id="add">
-        <div class="container flex gap-[134px] mx-auto font-medium text-[11px] leading-[15px] text-center pb-[88px] mb-[120px]">
+        <div class="container px-[118px] flex gap-[134px] mx-auto font-medium text-[11px] leading-[15px] text-center pb-[88px] mb-[120px]">
           <div>
             <div class="w-[144px] h-[30px] rounded-t-[7px] px-[7px] py-[14px] bg-addbtn flex justify-center items-center ">Редагувати вакансію</div>
             <div class="border-[2.33px] border-addbtn border-solid rounded-tr-[7px] rounded-br-[7px] rounded-bl-[7px] w-[566px] pt-[32px] pr-[14px] pb-[18px] pl-[14px]"> <img src="./src/assets/screen.jpg" alt=""></div>
@@ -180,7 +180,7 @@
         </div>
       </section>
       <section id="filters" > 
-        <div class="mx-auto container" >
+        <div class="mx-auto container px-[118px] " >
         <div class="relative flex justify-center w-[1026px] mx-auto ">
             <img src="./src/assets/Eclipse.png" alt="elipse" class="w-[812px] h-[826px]">
             <p class="absolute left-[270px] bottom-[330px] w-[486px] font-bold text-3xl leading-[43px] text-center text-text">Слідкуйте за статусом резюме, збирайте аналітику та систематизуйте процес</p>
@@ -283,13 +283,13 @@
     </div>    
       </section>
       <section id="analitics">
-        <div class="w-[1156px] ml-auto mr-auto flex flex-row mt-[180px]">
+        <div class="container mx-auto px-[118px]  flex flex-row mt-[180px] mb-[120px]">
           <div class="flex flex-col justify-center">
             <h2 class="font-bold text-3xl leading-[43px] text-text mb-[60px]">Почніть аналізувати свої результати з JobTracker!</h2>
             <p class="font-medium text-md text-blackText leading-7 mb-[60px]">Не втрачайте шанс виділитися із сотень кандидатів. Дивіться статистику своїх відгуків, аналізуйте причини відмов, плануйте свій графік</p>
               <a
               href=""
-              class="w-[432px] h-[51px] inline-block border border-blackText rounded-xl py-3 px-11 bg-btn text-blackText font-medium text-md leading-[27px]"
+              class="w-[434px] h-[51px] inline-block border border-blackText rounded-xl py-3 px-12 bg-btn text-blackText font-medium text-md leading-[27px]"
               >Розпочати аналізувати свої відгуки</a
             >
           </div>
@@ -299,7 +299,51 @@
           </svg> -->
         </div>
       </section>
+      <section id="CTA">
+        <div class=" container px-[118px]  mx-auto flex flex-col justify-center mb-[120px]">
+            <h2 class="font-bold text-6xl leading-[54px] text-blackText mb-[90px] uppercase text-center">Перший крок до нової роботи - з <span class="text-text">JobTracker!</span></h2>
+            <p class="font-medium text-3xl text-blackText leading-[43px] mb-[60px] text-center">Перетвори хаос із десятками резюме на організований процес. Спробуй <span class="text-text">JobTracker</span>  і будь на крок попереду.</p>
+              <a
+              href=""
+              class="w-[628px] h-[51px] mx-auto border border-blackText rounded-xl py-3 px-12 bg-btn text-blackText font-bold text-md leading-[27px]"
+              >ПОЧАТИ СВІЙ ШЛЯХ У  <span class=" text-textheroBlue font-bold">JOBTRACKER БЕЗКОШТОВНО</span></a
+            >
+          </div>
+      </section>
     </main>
+    <footer>
+      <div class="container px-[118px]  mx-auto">
+        <p class="text-center mb-[60px] font-bold text-3xl text-blackText leading-[43px]">Для додаткової інформації ви можете зв'язатися з нами в соц. мережах</p>
+      <ul class="flex flex-row justify-between mb-[108px]">
+        <li class="flex flex-row gap-[10px] items-center">
+          <svg class="w-[38px] h-[38px]">
+            <use href="./src/assets/symbol-defs.svg#icon-Inst"></use>
+          </svg>
+          <p class="font-medium text-md leading-[27px] text-blackText">Instagram</p>
+        </li>
+        <li class="flex flex-row gap-[10px] items-center">
+          <svg class="w-[38px] h-[38px]">
+            <use href="./src/assets/symbol-defs.svg#icon-teleg"></use>
+          </svg>
+          <p class="font-medium text-md leading-[27px] text-blackText">Telegram</p>
+        </li>
+        <li class="flex flex-row gap-[10px] items-center">
+          <svg class="w-[38px] h-[38px]">
+            <use href="./src/assets/symbol-defs.svg#icon-link"></use>
+          </svg>
+          <p class="font-medium text-md leading-[27px] text-blackText">LinkedIn</p>
+        </li>
+        <li class="flex flex-row gap-[10px] items-center">
+          <svg class="w-[38px] h-[38px]">
+            <use href="./src/assets/symbol-defs.svg#icon-Googleicon"></use>
+          </svg>
+          <p class="font-medium text-md leading-[27px] text-blackText">Gmail</p>
+        </li>
+      </ul>
+      <p class="text-center">Розробка Baza Trainee Ukraine 2024 ©  Усі права захищені</p>
+      </div>
+      
+    </footer>
     <!-- <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
     <div id="app"></div> -->
     <!-- 
