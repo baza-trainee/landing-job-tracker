@@ -33,11 +33,10 @@ export default {
     },
     screens: {
       smallMobile: "320px",
-      // => @media (min-width: 320px) { ... }
-      mobile: "375px",
-      // => @media (min-width: 375px) { ... }
+
+      mobile: "480px",
+
       desktop: "1440px",
-      // => @media (min-width: 1440px) { ... }
     },
     extend: {
       backgroundImage: {

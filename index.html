@@ -6,57 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
     <title>JobTracker</title>
-    
   </head>
-  <body  class="font-nunito  bg-bg-vector bg-no-repeat bg-cover">
-
+  <body
+    class="font-nunito desktop:bg-bg-vector bg-no-repeat bg-cover mobile:bg-none smallMobile:bg-none"
+  >
     <header>
-        <div
-          class="container px-[118px]  relative top-[-20px] mx-auto mt-[90px] "
-        >
-        <div class=" absolute left-[-100px] top-[-68px]">
+      <div
+        class="container relative mx-auto mt-[90px] desktop:px-[118px] mobile:px-6 smallMobile:px-24 "
+      >
+        <div class="absolute desktop:left-[20px] desktop:top-[-68px] mobile:top-[-90px] mobile:right-6">
           <svg width="94" height="77">
             <use href="./src/assets/symbol-defs.svg#icon-Logo"></use>
           </svg>
         </div>
-          <h1
-            class="font-bold text-6xl leading-[54px] text-text uppercase text-center mb-[119px]"
-          >
-            Не встигаєш стежити за новими вакансіями?
-          </h1>
-          <h2 class="font-bold text-3xl leading-[44px] text-text mb-[60px]">
+        <h1
+          class="font-bold  text-text text-center mb-[30px] desktop:text-6xl desktop:leading-[54px] desktop:uppercase mobile:text-[24px] mobile:leading-8 mobile:normal-case mobile:mb-6"
+        >
+          Не встигаєш стежити за новими вакансіями?
+        </h1>
+        <div class="flex justify-between desktop:flex-row mobile:flex-col ">
+          <div class="flex flex-col items-start justify-center ">
+          <h2 class="font-bold  text-text desktop:mb-[60px] desktop:text-3xl  desktop:leading-[44px] mobile:text-sm mobile:leading-6 mobile:mb-[30px]">
             Тоді у нас є для тебе рішення!
           </h2>
           <ul
-            class="list-disc font-medium text-md leading-10 text-blackText ml-7 mb-[42px]"
+            class="list-disc font-medium  text-blackText ml-5 mb-[42px] desktop:text-md desktop:leading-10 mobile:text-s mobile:leading-7 mobile:mb-6"
           >
             <li>Систематизуй свої відгуки та обирай найкращі</li>
             <li>Зручний пошук, практичні фільтри та легкий відгук</li>
             <li>Зберігай, аналізуй та розвивайся</li>
             <li>Уся важлива інформація на одному екрані</li>
           </ul>
-          <p class="font-medium text-md leading-7 text-blackText mb-[80px]">
-            Переходь скоріше на наш сайт і починай свою <br />
-            кар'єру в IT швидко та просто!
+          <p class="font-medium  text-blackText desktop:text-md desktop:leading-7 desktop:mb-[80px] mobile:text-xs mobile:leading-5 mobile:mb-[-40px] ">
+            Переходь скоріше на наш сайт і починай свою <span class="desktop:block">
+            кар'єру в IT швидко та просто!</span>
           </p>
-          <div class="mb-[52px]">
-            <a
-              href=""
-              class="w-[414px] h-[51px] inline-block border border-blackText rounded-xl py-3 px-11 bg-btn text-blackText font-medium text-md leading-[27px]"
-              >JobTracker - твій онлайн помічник</a
-            >
-          </div>
-          <svg class="w-[633px] h-[633px] absolute right-0 top-[64px]">
-            <use href="./src/assets/symbol-defs.svg#icon-illustration"></use>
+
+          <a
+            href=""
+            class="w-[414px] h-[51px] inline-block border border-blackText rounded-xl py-3 px-11 bg-btn text-blackText font-medium text-md leading-[27px] desktop:static mobile:absolute mobile:bottom-[-60px]"
+            >JobTracker - твій онлайн помічник</a
+          >
+        </div>
+
+        <div>
+          <svg  viewBox="0 0 633 633" preserveAspectRatio="xMidYMid meet" class=" p-0 m-0 inline-block desktop:w-[633px] desktop:h-[633px] mobile:w-full mobile:h-[425px]">
+            <use href="./src/assets/symbol-defs.svg#icon-illustration" width="100% " height="100%"></use>
           </svg>
+          <!-- <img src="./src/assets/illustration.png" alt="ілюстрація"  class="desktop:w-max mobile:w-max"/> -->
         </div>
       </div>
     </header>
     <main>
       <section id="hero">
-        <div class="mt-[120px] container px-[118px]  mx-auto mb-[120px] ">
-          <ul class="grid grid-cols-2 gap-6 ">
-            <li class="min-h-[566px]  bg-heroBlue relative">
+        <div class="mt-[120px] container px-[118px] mx-auto mb-[120px]">
+          <ul class="grid grid-cols-2 gap-6">
+            <li class="min-h-[566px] bg-heroBlue relative">
               <div class="ml-[25px] mt-[35px] text-left">
                 <h3
                   class="font-bold text-3xl leading-[43px] text-textheroBlue mb-[100px]"
@@ -80,7 +85,7 @@
                 </svg>
               </div>
             </li>
-            <li class="min-h-[566px]  bg-heroGreen relative">
+            <li class="min-h-[566px] bg-heroGreen relative">
               <div class="mr-[25px] mt-[35px] text-right">
                 <h3
                   class="font-bold text-3xl leading-[43px] text-textheroGreen mb-[100px]"
@@ -106,8 +111,8 @@
                 </svg>
               </div>
             </li>
-            
-            <li class="min-h-[566px]  bg-heroGreen relative">
+
+            <li class="min-h-[566px] bg-heroGreen relative">
               <div class="ml-[25px] mt-[35px] text-left">
                 <h3
                   class="font-bold text-3xl leading-[43px] text-textheroGreen mb-[100px]"
@@ -161,188 +166,319 @@
         </div>
       </section>
       <section id="add">
-        <div class="container px-[118px] flex gap-[134px] mx-auto font-medium text-[11px] leading-[15px] text-center pb-[88px] mb-[120px]">
+        <div
+          class="container px-[118px] flex gap-[134px] mx-auto font-medium text-[11px] leading-[15px] text-center pb-[88px] mb-[120px]"
+        >
           <div>
-            <div class="w-[144px] h-[30px] rounded-t-[7px] px-[7px] py-[14px] bg-addbtn flex justify-center items-center ">Редагувати вакансію</div>
-            <div class="border-[2.33px] border-addbtn border-solid rounded-tr-[7px] rounded-br-[7px] rounded-bl-[7px] w-[566px] pt-[32px] pr-[14px] pb-[18px] pl-[14px]"> <img src="./src/assets/screen.jpg" alt=""></div>
-           
+            <div
+              class="w-[144px] h-[30px] rounded-t-[7px] px-[7px] py-[14px] bg-addbtn flex justify-center items-center"
+            >
+              Редагувати вакансію
+            </div>
+            <div
+              class="border-[2.33px] border-addbtn border-solid rounded-tr-[7px] rounded-br-[7px] rounded-bl-[7px] w-[566px] pt-[32px] pr-[14px] pb-[18px] pl-[14px]"
+            >
+              <img src="./src/assets/screen.jpg" alt="" />
+            </div>
           </div>
           <div class="flex flex-col justify-center items-left">
-          <h2 class="font-bold text-3xl leading-[43px] text-text text-left mb-[60px]">Все в одному місці, все під контролем</h2>
-          <p class="font-medium text-md leading-7 text-blackText text-left mb-[60px]">Додавайте та оновлюйте відгуки за допомогою інструментів JobTracker. Знайти вакансію легко, а ось стежити за відгуками - складно</p>
-          
-           <a
+            <h2
+              class="font-bold text-3xl leading-[43px] text-text text-left mb-[60px]"
+            >
+              Все в одному місці, все під контролем
+            </h2>
+            <p
+              class="font-medium text-md leading-7 text-blackText text-left mb-[60px]"
+            >
+              Додавайте та оновлюйте відгуки за допомогою інструментів
+              JobTracker. Знайти вакансію легко, а ось стежити за відгуками -
+              складно
+            </p>
+
+            <a
               href=""
-              class="w-[390px] h-[51px] border border-blackText rounded-xl py-3 px-11 bg-btn  text-blackText font-medium text-md leading-[27px]"
+              class="w-[390px] h-[51px] border border-blackText rounded-xl py-3 px-11 bg-btn text-blackText font-medium text-md leading-[27px]"
               >Керуйте відгуками у JobTracker</a
             >
-        </div>
+          </div>
         </div>
       </section>
-      <section id="filters" > 
-        <div class="mx-auto container px-[118px] " >
-        <div class="relative flex justify-center w-[1026px] mx-auto ">
-            <img src="./src/assets/Eclipse.png" alt="elipse" class="w-[812px] h-[826px]">
-            <p class="absolute left-[270px] bottom-[330px] w-[486px] font-bold text-3xl leading-[43px] text-center text-text">Слідкуйте за статусом резюме, збирайте аналітику та систематизуйте процес</p>
-            <ul >
-              <li class="absolute top-[-59px] left-[350px] ">
-                <div class=" w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersBlue flex justify-center items-center font-medium text-md text-blackText shadow-filters">Відправлені</div>
-                <div class=" w-[326px] bg-white border-4 border-filtersBlue border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl ">
-                  <div class="bg-filtersBlue rounded-xl p-3 bg-opacity-40"> 
-                  <h2 class="font-medium text-m text-blackText">Junior UX/UI designer</h2>
-                  <p class="font-medium text-xs text-blackText">Ajax Systems</p>
-                  <div class="flex items-center gap-1">
-                  <svg class="w-[24px] h-[24px] ">
-                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
-                  </svg>
-                  <p class="font-medium text-s text-blackText">Офіс Київ</p>
-                  </div>
+      <section id="filters">
+        <div class="mx-auto container px-[118px]">
+          <div class="relative flex justify-center w-[1026px] mx-auto">
+            <img
+              src="./src/assets/Eclipse.png"
+              alt="elipse"
+              class="w-[812px] h-[826px]"
+            />
+            <p
+              class="absolute left-[270px] bottom-[330px] w-[486px] font-bold text-3xl leading-[43px] text-center text-text"
+            >
+              Слідкуйте за статусом резюме, збирайте аналітику та систематизуйте
+              процес
+            </p>
+            <ul>
+              <li class="absolute top-[-59px] left-[350px]">
+                <div
+                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersBlue flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                >
+                  Відправлені
                 </div>
+                <div
+                  class="w-[326px] bg-white border-4 border-filtersBlue border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                >
+                  <div class="bg-filtersBlue rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">
+                      Junior UX/UI designer
+                    </h2>
+                    <p class="font-medium text-xs text-blackText">
+                      Ajax Systems
+                    </p>
+                    <div class="flex items-center gap-1">
+                      <svg class="w-[24px] h-[24px]">
+                        <use
+                          href="./src/assets/symbol-defs.svg#icon-Location"
+                        ></use>
+                      </svg>
+                      <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="absolute right-[-19px] top-[150px]">
-                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersPerpule flex justify-center items-center font-medium text-md text-blackText shadow-filters">HR співбесіда</div>
-                <div class=" w-[326px] bg-white border-4 border-filtersPerpule border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
-                   <div class="bg-filtersPerpule rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">JUX/UI designer</h2>
-                  <p class="font-medium text-xs text-blackText">Epam</p>
-                 <div class="flex items-center gap-1">
-                  <svg class="w-[24px] h-[24px] ">
-                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
-                  </svg>
-                  <p class="font-medium text-s text-blackText ">Remote</p>
+                <div
+                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersPerpule flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                >
+                  HR співбесіда
+                </div>
+                <div
+                  class="w-[326px] bg-white border-4 border-filtersPerpule border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                >
+                  <div class="bg-filtersPerpule rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">
+                      JUX/UI designer
+                    </h2>
+                    <p class="font-medium text-xs text-blackText">Epam</p>
+                    <div class="flex items-center gap-1">
+                      <svg class="w-[24px] h-[24px]">
+                        <use
+                          href="./src/assets/symbol-defs.svg#icon-Location"
+                        ></use>
+                      </svg>
+                      <p class="font-medium text-s text-blackText">Remote</p>
+                    </div>
                   </div>
                 </div>
-                </div>
-               
               </li>
               <li class="absolute left-[-19px] top-[150px]">
-                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filterslightGreen flex justify-center items-center font-medium text-md text-blackText shadow-filters">Збережені</div>
-                <div class=" w-[326px] bg-white border-4 border-filterslightGreen border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
-                   <div class="bg-filterslightGreen rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">Junior UX/UI designer</h2>
-                  <p class="font-medium text-xs text-blackText">Ajax Systems</p>
-                 <div class="flex items-center gap-1">
-                  <svg class="w-[24px] h-[24px] ">
-                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
-                  </svg>
-                  <p class="font-medium text-s text-blackText">Офіс Київ</p>
-                  </div>
+                <div
+                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filterslightGreen flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                >
+                  Збережені
                 </div>
+                <div
+                  class="w-[326px] bg-white border-4 border-filterslightGreen border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                >
+                  <div
+                    class="bg-filterslightGreen rounded-xl p-3 bg-opacity-40"
+                  >
+                    <h2 class="font-medium text-m text-blackText">
+                      Junior UX/UI designer
+                    </h2>
+                    <p class="font-medium text-xs text-blackText">
+                      Ajax Systems
+                    </p>
+                    <div class="flex items-center gap-1">
+                      <svg class="w-[24px] h-[24px]">
+                        <use
+                          href="./src/assets/symbol-defs.svg#icon-Location"
+                        ></use>
+                      </svg>
+                      <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="absolute left-[-19px] top-[490px]">
-                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersRed flex justify-center items-center font-medium text-md text-blackText shadow-filters">Відмова</div>
-                <div class=" w-[326px] bg-white border-4 border-filtersRed border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
-                   <div class="bg-filtersRed rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">JUX/UI designer</h2>
-                  <p class="font-medium text-xs text-blackText">Epam</p>
-                 <div class="flex items-center gap-1">
-                  <svg class="w-[24px] h-[24px] ">
-                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
-                  </svg>
-                  <p class="font-medium text-s text-blackText ">Remote</p>
-                  </div>
+                <div
+                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersRed flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                >
+                  Відмова
                 </div>
+                <div
+                  class="w-[326px] bg-white border-4 border-filtersRed border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                >
+                  <div class="bg-filtersRed rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">
+                      JUX/UI designer
+                    </h2>
+                    <p class="font-medium text-xs text-blackText">Epam</p>
+                    <div class="flex items-center gap-1">
+                      <svg class="w-[24px] h-[24px]">
+                        <use
+                          href="./src/assets/symbol-defs.svg#icon-Location"
+                        ></use>
+                      </svg>
+                      <p class="font-medium text-s text-blackText">Remote</p>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="absolute right-[-19px] top-[490px]">
-                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersGrey flex justify-center items-center font-medium text-md text-blackText shadow-filters">Технічна співбесіда</div>
-                <div class=" w-[326px] bg-white border-4 border-filtersGrey border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
-                   <div class="bg-filtersGrey rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">Junior/Trainee UX/UI designer</h2>
-                  <p class="font-medium text-xs text-blackText">Skelar</p>
-                 <div class="flex items-center gap-1">
-                  <svg class="w-[24px] h-[24px] ">
-                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
-                  </svg>
-                  <p class="font-medium text-s text-blackText">Офіс Львів</p>
+                <div
+                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersGrey flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                >
+                  Технічна співбесіда
+                </div>
+                <div
+                  class="w-[326px] bg-white border-4 border-filtersGrey border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                >
+                  <div class="bg-filtersGrey rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">
+                      Junior/Trainee UX/UI designer
+                    </h2>
+                    <p class="font-medium text-xs text-blackText">Skelar</p>
+                    <div class="flex items-center gap-1">
+                      <svg class="w-[24px] h-[24px]">
+                        <use
+                          href="./src/assets/symbol-defs.svg#icon-Location"
+                        ></use>
+                      </svg>
+                      <p class="font-medium text-s text-blackText">
+                        Офіс Львів
+                      </p>
+                    </div>
                   </div>
                 </div>
-                </div>
-            </li>
+              </li>
               <li class="absolute left-[350px] top-[720px] pb-[14px]">
-                <div class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersGreen flex justify-center items-center font-medium text-md text-blackText shadow-filters">Офер</div>
-                <div class=" w-[326px] bg-white  border-4 border-filtersGreen border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl">
-                   <div class="bg-filtersGreen rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">Junior UX/UI designer</h2>
-                  <p class="font-medium text-xs text-blackText">Ajax Systems</p>
-                 <div class="flex items-center gap-1">
-                  <svg class="w-[24px] h-[24px] ">
-                  <use href="./src/assets/symbol-defs.svg#icon-Location"></use>
-                  </svg>
-                  <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                <div
+                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersGreen flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                >
+                  Офер
+                </div>
+                <div
+                  class="w-[326px] bg-white border-4 border-filtersGreen border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                >
+                  <div class="bg-filtersGreen rounded-xl p-3 bg-opacity-40">
+                    <h2 class="font-medium text-m text-blackText">
+                      Junior UX/UI designer
+                    </h2>
+                    <p class="font-medium text-xs text-blackText">
+                      Ajax Systems
+                    </p>
+                    <div class="flex items-center gap-1">
+                      <svg class="w-[24px] h-[24px]">
+                        <use
+                          href="./src/assets/symbol-defs.svg#icon-Location"
+                        ></use>
+                      </svg>
+                      <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                    </div>
                   </div>
                 </div>
-                </div>
-          </li>
+              </li>
             </ul>
+          </div>
         </div>
-        
-            
-    </div>    
       </section>
       <section id="analitics">
-        <div class="container mx-auto px-[118px]  flex flex-row mt-[180px] mb-[120px]">
+        <div
+          class="container mx-auto px-[118px] flex flex-row mt-[180px] mb-[120px]"
+        >
           <div class="flex flex-col justify-center">
-            <h2 class="font-bold text-3xl leading-[43px] text-text mb-[60px]">Почніть аналізувати свої результати з JobTracker!</h2>
-            <p class="font-medium text-md text-blackText leading-7 mb-[60px]">Не втрачайте шанс виділитися із сотень кандидатів. Дивіться статистику своїх відгуків, аналізуйте причини відмов, плануйте свій графік</p>
-              <a
+            <h2 class="font-bold text-3xl leading-[43px] text-text mb-[60px]">
+              Почніть аналізувати свої результати з JobTracker!
+            </h2>
+            <p class="font-medium text-md text-blackText leading-7 mb-[60px]">
+              Не втрачайте шанс виділитися із сотень кандидатів. Дивіться
+              статистику своїх відгуків, аналізуйте причини відмов, плануйте
+              свій графік
+            </p>
+            <a
               href=""
               class="w-[434px] h-[51px] inline-block border border-blackText rounded-xl py-3 px-12 bg-btn text-blackText font-medium text-md leading-[27px]"
               >Розпочати аналізувати свої відгуки</a
             >
           </div>
-          <img class="" src="./src/assets/Statistic.png" alt="statistic">
-           <!-- <svg class="w-[600px] h-[600px] ">
+          <img class="" src="./src/assets/Statistic.png" alt="statistic" />
+          <!-- <svg class="w-[600px] h-[600px] ">
              <use href="./src/assets/symbol-defs.svg#icon-Statistacs-page"></use>
           </svg> -->
         </div>
       </section>
       <section id="CTA">
-        <div class=" container px-[118px]  mx-auto flex flex-col justify-center mb-[120px]">
-            <h2 class="font-bold text-6xl leading-[54px] text-blackText mb-[90px] uppercase text-center">Перший крок до нової роботи - з <span class="text-text">JobTracker!</span></h2>
-            <p class="font-medium text-3xl text-blackText leading-[43px] mb-[60px] text-center">Перетвори хаос із десятками резюме на організований процес. Спробуй <span class="text-text">JobTracker</span>  і будь на крок попереду.</p>
-              <a
-              href=""
-              class="w-[628px] h-[51px] mx-auto border border-blackText rounded-xl py-3 px-12 bg-btn text-blackText font-bold text-md leading-[27px]"
-              >ПОЧАТИ СВІЙ ШЛЯХ У  <span class=" text-textheroBlue font-bold">JOBTRACKER БЕЗКОШТОВНО</span></a
-            >
-          </div>
+        <div
+          class="container px-[118px] mx-auto flex flex-col justify-center mb-[120px]"
+        >
+          <h2
+            class="font-bold text-6xl leading-[54px] text-blackText mb-[90px] uppercase text-center"
+          >
+            Перший крок до нової роботи - з
+            <span class="text-text">JobTracker!</span>
+          </h2>
+          <p
+            class="font-medium text-3xl text-blackText leading-[43px] mb-[60px] text-center"
+          >
+            Перетвори хаос із десятками резюме на організований процес. Спробуй
+            <span class="text-text">JobTracker</span> і будь на крок попереду.
+          </p>
+          <a
+            href=""
+            class="w-[628px] h-[51px] mx-auto border border-blackText rounded-xl py-3 px-12 bg-btn text-blackText font-bold text-md leading-[27px]"
+            >ПОЧАТИ СВІЙ ШЛЯХ У
+            <span class="text-textheroBlue font-bold"
+              >JOBTRACKER БЕЗКОШТОВНО</span
+            ></a
+          >
+        </div>
       </section>
     </main>
     <footer>
-      <div class="container px-[118px]  mx-auto">
-        <p class="text-center mb-[60px] font-bold text-3xl text-blackText leading-[43px]">Для додаткової інформації ви можете зв'язатися з нами в соц. мережах</p>
-      <ul class="flex flex-row justify-between mb-[108px]">
-        <li class="flex flex-row gap-[10px] items-center">
-          <svg class="w-[38px] h-[38px]">
-            <use href="./src/assets/symbol-defs.svg#icon-Inst"></use>
-          </svg>
-          <p class="font-medium text-md leading-[27px] text-blackText">Instagram</p>
-        </li>
-        <li class="flex flex-row gap-[10px] items-center">
-          <svg class="w-[38px] h-[38px]">
-            <use href="./src/assets/symbol-defs.svg#icon-teleg"></use>
-          </svg>
-          <p class="font-medium text-md leading-[27px] text-blackText">Telegram</p>
-        </li>
-        <li class="flex flex-row gap-[10px] items-center">
-          <svg class="w-[38px] h-[38px]">
-            <use href="./src/assets/symbol-defs.svg#icon-link"></use>
-          </svg>
-          <p class="font-medium text-md leading-[27px] text-blackText">LinkedIn</p>
-        </li>
-        <li class="flex flex-row gap-[10px] items-center">
-          <svg class="w-[38px] h-[38px]">
-            <use href="./src/assets/symbol-defs.svg#icon-Googleicon"></use>
-          </svg>
-          <p class="font-medium text-md leading-[27px] text-blackText">Gmail</p>
-        </li>
-      </ul>
-      <p class="text-center">Розробка Baza Trainee Ukraine 2024 ©  Усі права захищені</p>
+      <div class="container px-[118px] mx-auto">
+        <p
+          class="text-center mb-[60px] font-bold text-3xl text-blackText leading-[43px]"
+        >
+          Для додаткової інформації ви можете зв'язатися з нами в соц. мережах
+        </p>
+        <ul class="flex flex-row justify-between mb-[108px]">
+          <li class="flex flex-row gap-[10px] items-center">
+            <svg class="w-[38px] h-[38px]">
+              <use href="./src/assets/symbol-defs.svg#icon-Inst"></use>
+            </svg>
+            <p class="font-medium text-md leading-[27px] text-blackText">
+              Instagram
+            </p>
+          </li>
+          <li class="flex flex-row gap-[10px] items-center">
+            <svg class="w-[38px] h-[38px]">
+              <use href="./src/assets/symbol-defs.svg#icon-teleg"></use>
+            </svg>
+            <p class="font-medium text-md leading-[27px] text-blackText">
+              Telegram
+            </p>
+          </li>
+          <li class="flex flex-row gap-[10px] items-center">
+            <svg class="w-[38px] h-[38px]">
+              <use href="./src/assets/symbol-defs.svg#icon-link"></use>
+            </svg>
+            <p class="font-medium text-md leading-[27px] text-blackText">
+              LinkedIn
+            </p>
+          </li>
+          <li class="flex flex-row gap-[10px] items-center">
+            <svg class="w-[38px] h-[38px]">
+              <use href="./src/assets/symbol-defs.svg#icon-Googleicon"></use>
+            </svg>
+            <p class="font-medium text-md leading-[27px] text-blackText">
+              Gmail
+            </p>
+          </li>
+        </ul>
+        <p class="text-center">
+          Розробка Baza Trainee Ukraine 2024 © Усі права захищені
+        </p>
       </div>
-      
     </footer>
     <!-- <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
     <div id="app"></div> -->
