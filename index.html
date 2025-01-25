@@ -52,8 +52,8 @@
               </p>
 
               <a
-                href=""
-                class="inline-block border border-blackText rounded-xl py-3 desktop:w-[414px] desktop:h-[51px] mobile:w-[303px] mobile:h-[46px] desktop:px-11 mobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m desktop:leading-[27px] mobile:leading-[22px] desktop:static mobile:absolute mobile:bottom-[-60px] mobile:left-[90px] desktop:mx-0 mobile:mx-auto mobile:text-center"
+                href="https://job-tracker-frontend-three.vercel.app/vacancies"
+                class="border border-blackText rounded-xl py-3 desktop:w-[414px] desktop:h-[51px] mobile:w-[303px] mobile:h-[46px] desktop:px-11 mobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m desktop:leading-[27px] mobile:leading-[22px] desktop:static mobile:absolute mobile:bottom-[-60px] mobile:left-[140px] desktop:mx-0 mobile:mx-auto mobile:text-center"
                 >JobTracker - твій онлайн помічник
               </a>
             </div>
@@ -200,28 +200,30 @@
       </section>
       <section id="add">
         <div
-          class="container px-[118px] flex gap-[134px] mx-auto font-medium text-[11px] leading-[15px] text-center pb-[88px] mb-[120px]"
+          class="container desktop:px-[118px] mobile:px-6 flex desktop:flex-row mobile:flex-col desktop:gap-[134px] mobile:gap-0 mx-auto desktop:pb-[88px] desktop:mb-[120px] mobile:pb-0 mobile:mb-[250px]"
         >
-          <div>
+          <div class="flex flex-col mobile:order-2">
             <div
-              class="w-[144px] h-[30px] rounded-t-[7px] px-[7px] py-[14px] bg-addbtn flex justify-center items-center"
+              class="desktop:w-[144px] mobile:w-[140px] desktop:h-[30px] mobile:h-[29px] rounded-t-[7px] desktop:px-[7px] desktop::py-[14px] mobile:px-[6px] mobile:py-[13px] bg-addbtn flex justify-center items-center font-medium text-[11px] leading-[15px] text-center"
             >
               Редагувати вакансію
             </div>
             <div
-              class="border-[2.33px] border-addbtn border-solid rounded-tr-[7px] rounded-br-[7px] rounded-bl-[7px] w-[566px] pt-[32px] pr-[14px] pb-[18px] pl-[14px]"
+              class="desktop:border-[2.33px] mobile:border-[2.28px] border-addbtn border-solid rounded-tr-[7px] rounded-br-[7px] rounded-bl-[7px] desktop:w-[566px] mobile:w-[552px] desktop:pt-[32px] mobile:pt-[9px] pr-[14px] pb-[18px] pl-[14px]"
             >
-              <img src="./src/assets/screen.jpg" alt="" />
+              <img src="./src/assets/screen.jpg" alt=" screen" />
             </div>
           </div>
-          <div class="flex flex-col justify-center items-left">
+          <div
+            class="flex flex-col justify-center desktop:items-left mobile:items-center mobile:order-1 mobile:relative desktop:static"
+          >
             <h2
-              class="font-bold text-3xl leading-[43px] text-text text-left mb-[60px]"
+              class="font-bold desktop:text-3xl mobile:text-sm desktop:leading-[43px] mobile:leading-6 text-text desktop:text-left mobile:text-center desktop:mb-[60px] mobile:mb-[30px]"
             >
               Все в одному місці, все під контролем
             </h2>
             <p
-              class="font-medium text-md leading-7 text-blackText text-left mb-[60px]"
+              class="font-medium desktop:text-md mobile:text-s desktop:leading-7 mobile:leading-5 text-blackText desktop:text-left mobile:text-center mb-[60px]"
             >
               Додавайте та оновлюйте відгуки за допомогою інструментів
               JobTracker. Знайти вакансію легко, а ось стежити за відгуками -
@@ -229,184 +231,282 @@
             </p>
 
             <a
-              href=""
-              class="w-[390px] h-[51px] border border-blackText rounded-xl py-3 px-11 bg-btn text-blackText font-medium text-md leading-[27px]"
+              href="https://job-tracker-frontend-three.vercel.app/vacancies"
+              class="desktop:w-[390px] mobile:w-[283px] desktop:h-[51px] mobile:h-[46px] border border-blackText rounded-xl py-3 desktop:px-11 mobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m desktop:leading-[27px] mobile:leading-[22px] desktop:static mobile:absolute mobile:bottom-[-600px]"
               >Керуйте відгуками у JobTracker</a
             >
           </div>
         </div>
       </section>
       <section id="filters">
-        <div class="mx-auto container px-[118px]">
-          <div class="relative flex justify-center w-[1026px] mx-auto">
+        <div class="mx-auto container desktop:px-[118px] mobile:px-6">
+          <div class="relative flex justify-center desktop:w-[1026px] mx-auto">
             <img
               src="./src/assets/Eclipse.png"
               alt="elipse"
-              class="w-[812px] h-[826px]"
+              class="desktop:w-[812px] desktop:h-[826px] mobile:w-[445px] mobile:h-[445px]"
             />
             <p
-              class="absolute left-[270px] bottom-[330px] w-[486px] font-bold text-3xl leading-[43px] text-center text-text"
+              class="absolute desktop:left-[270px] desktop:bottom-[330px] mobile:left-[145px] mobile:bottom-[190px] desktop:w-[486px] mobile:w-[262px] font-bold desktop:text-3xl mobile:text-sm desktop:leading-[43px] mobile:leading-6 text-center text-text"
             >
               Слідкуйте за статусом резюме, збирайте аналітику та систематизуйте
               процес
             </p>
             <ul>
-              <li class="absolute top-[-59px] left-[350px]">
+              <li
+                class="absolute desktop:top-[-59px] desktop:left-[350px] mobile:top-[-56px] mobile:left-[188px]"
+              >
                 <div
-                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersBlue flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersBlue flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
                 >
                   Відправлені
                 </div>
                 <div
-                  class="w-[326px] bg-white border-4 border-filtersBlue border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersBlue border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
                 >
-                  <div class="bg-filtersBlue rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">
+                  <div
+                    class="bg-filtersBlue desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                  >
+                    <h2
+                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                    >
                       Junior UX/UI designer
                     </h2>
-                    <p class="font-medium text-xs text-blackText">
+                    <p
+                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                    >
                       Ajax Systems
                     </p>
-                    <div class="flex items-center gap-1">
-                      <svg class="w-[24px] h-[24px]">
+                    <div
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                    >
+                      <svg
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                      >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
-                      <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                      <p
+                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                      >
+                        Офіс Київ
+                      </p>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="absolute right-[-19px] top-[150px]">
+              <li
+                class="absolute desktop:right-[-19px] desktop:top-[150px] mobile:top-[58px] mobile:right-[-10px]"
+              >
                 <div
-                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersPerpule flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersPerpule flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
                 >
                   HR співбесіда
                 </div>
                 <div
-                  class="w-[326px] bg-white border-4 border-filtersPerpule border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersPerpule border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
                 >
-                  <div class="bg-filtersPerpule rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">
+                  <div
+                    class="bg-filtersPerpule desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                  >
+                    <h2
+                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                    >
                       JUX/UI designer
                     </h2>
-                    <p class="font-medium text-xs text-blackText">Epam</p>
-                    <div class="flex items-center gap-1">
-                      <svg class="w-[24px] h-[24px]">
+                    <p
+                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                    >
+                      Epam
+                    </p>
+                    <div
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                    >
+                      <svg
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                      >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
-                      <p class="font-medium text-s text-blackText">Remote</p>
+                      <p
+                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                      >
+                        Remote
+                      </p>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="absolute left-[-19px] top-[150px]">
+              <li
+                class="absolute desktop:left-[-19px] desktop:top-[150px] mobile:left-[-10px] mobile:top-[58px]"
+              >
                 <div
-                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filterslightGreen flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filterslightGreen flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
                 >
                   Збережені
                 </div>
                 <div
-                  class="w-[326px] bg-white border-4 border-filterslightGreen border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filterslightGreen border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
                 >
                   <div
-                    class="bg-filterslightGreen rounded-xl p-3 bg-opacity-40"
+                    class="bg-filterslightGreen desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
                   >
-                    <h2 class="font-medium text-m text-blackText">
+                    <h2
+                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                    >
                       Junior UX/UI designer
                     </h2>
-                    <p class="font-medium text-xs text-blackText">
+                    <p
+                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                    >
                       Ajax Systems
                     </p>
-                    <div class="flex items-center gap-1">
-                      <svg class="w-[24px] h-[24px]">
+                    <div
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                    >
+                      <svg
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                      >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
-                      <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                      <p
+                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                      >
+                        Офіс Київ
+                      </p>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="absolute left-[-19px] top-[490px]">
+              <li
+                class="absolute desktop:left-[-19px] desktop:top-[490px] mobile:left-[-10px] mobile:top-[260px]"
+              >
                 <div
-                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersRed flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersRed flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
                 >
                   Відмова
                 </div>
                 <div
-                  class="w-[326px] bg-white border-4 border-filtersRed border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersRed border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
                 >
-                  <div class="bg-filtersRed rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">
+                  <div
+                    class="bg-filtersRed desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                  >
+                    <h2
+                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                    >
                       JUX/UI designer
                     </h2>
-                    <p class="font-medium text-xs text-blackText">Epam</p>
-                    <div class="flex items-center gap-1">
-                      <svg class="w-[24px] h-[24px]">
+                    <p
+                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                    >
+                      Epam
+                    </p>
+                    <div
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                    >
+                      <svg
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                      >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
-                      <p class="font-medium text-s text-blackText">Remote</p>
+                      <p
+                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                      >
+                        Remote
+                      </p>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="absolute right-[-19px] top-[490px]">
+              <li
+                class="absolute desktop:right-[-19px] desktop:top-[490px] mobile:right-[-10px] mobile:top-[260px]"
+              >
                 <div
-                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersGrey flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersGrey flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
                 >
                   Технічна співбесіда
                 </div>
                 <div
-                  class="w-[326px] bg-white border-4 border-filtersGrey border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersGrey border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
                 >
-                  <div class="bg-filtersGrey rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">
+                  <div
+                    class="bg-filtersGrey desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                  >
+                    <h2
+                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                    >
                       Junior/Trainee UX/UI designer
                     </h2>
-                    <p class="font-medium text-xs text-blackText">Skelar</p>
-                    <div class="flex items-center gap-1">
-                      <svg class="w-[24px] h-[24px]">
+                    <p
+                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                    >
+                      Skelar
+                    </p>
+                    <div
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                    >
+                      <svg
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                      >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
-                      <p class="font-medium text-s text-blackText">
+                      <p
+                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                      >
                         Офіс Львів
                       </p>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="absolute left-[350px] top-[720px] pb-[14px]">
+              <li
+                class="absolute desktop:left-[350px] desktop:top-[720px] mobile:left-[188px] mobile:top-[385px] pb-[14px]"
+              >
                 <div
-                  class="w-fit h-[39px] rounded-t-[8px] px-[6px] py-[12px] bg-filtersGreen flex justify-center items-center font-medium text-md text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersGreen flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
                 >
                   Офер
                 </div>
                 <div
-                  class="w-[326px] bg-white border-4 border-filtersGreen border-solid p-6 rounded-tr-xl rounded-bl-xl rounded-br-xl"
+                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersGreen border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
                 >
-                  <div class="bg-filtersGreen rounded-xl p-3 bg-opacity-40">
-                    <h2 class="font-medium text-m text-blackText">
+                  <div
+                    class="bg-filtersGreen desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                  >
+                    <h2
+                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                    >
                       Junior UX/UI designer
                     </h2>
-                    <p class="font-medium text-xs text-blackText">
+                    <p
+                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                    >
                       Ajax Systems
                     </p>
-                    <div class="flex items-center gap-1">
-                      <svg class="w-[24px] h-[24px]">
+                    <div
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                    >
+                      <svg
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                      >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
-                      <p class="font-medium text-s text-blackText">Офіс Київ</p>
+                      <p
+                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                      >
+                        Офіс Київ
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -417,24 +517,32 @@
       </section>
       <section id="analitics">
         <div
-          class="container mx-auto px-[118px] flex flex-row mt-[180px] mb-[120px]"
+          class="container mx-auto desktop:px-[118px] mobile:px-6 flex desktop:flex-row mobile:flex-col desktop:mt-[180px] mobile:mt-[90px] desktop:mb-[120px] mobile:mb-[60px] relative"
         >
-          <div class="flex flex-col justify-center">
-            <h2 class="font-bold text-3xl leading-[43px] text-text mb-[60px]">
+          <div class="flex flex-col justify-center items-center">
+            <h2
+              class="font-bold desktop:text-3xl mobile:text-sm desktop:leading-[43px] mobile:leading-6 text-text desktop:mb-[60px] mobile:mb-[30px] desktop:text-left mobile:text-center"
+            >
               Почніть аналізувати свої результати з JobTracker!
             </h2>
-            <p class="font-medium text-md text-blackText leading-7 mb-[60px]">
+            <p
+              class="font-medium desktop:text-md mobile:text-s text-blackText desctop:leading-7 mobile:leading-5 desktop:mb-[60px] desktop:text-left mobile:text-center"
+            >
               Не втрачайте шанс виділитися із сотень кандидатів. Дивіться
               статистику своїх відгуків, аналізуйте причини відмов, плануйте
               свій графік
             </p>
             <a
-              href=""
-              class="w-[434px] h-[51px] inline-block border border-blackText rounded-xl py-3 px-12 bg-btn text-blackText font-medium text-md leading-[27px]"
+              href="https://job-tracker-frontend-three.vercel.app/vacancies"
+              class="desktop:w-[434px] desktop:h-[51px] mobile:w-[317px] mobile:h-[46px] border border-blackText rounded-xl py-3 desktop:px-12 mobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m desktop:leading-[27px] mobile:leading-[22px] desktop:static mobile:absolute mobile:bottom-[-60px]"
               >Розпочати аналізувати свої відгуки</a
             >
           </div>
-          <img class="" src="./src/assets/Statistic.png" alt="statistic" />
+          <img
+            class="desktop:w-auto mobile:w-full h-auto"
+            src="./src/assets/Statistic.png"
+            alt="statistic"
+          />
           <!-- <svg class="w-[600px] h-[600px] ">
              <use href="./src/assets/symbol-defs.svg#icon-Statistacs-page"></use>
           </svg> -->

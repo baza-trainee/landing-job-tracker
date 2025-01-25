@@ -34,7 +34,7 @@ export default {
     screens: {
       smallMobile: "320px",
 
-      mobile: "480px",
+      mobile: "600px",
 
       desktop: "1440px",
     },
