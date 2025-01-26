@@ -34,13 +34,15 @@ export default {
     screens: {
       smallMobile: "320px",
 
-      mobile: "600px",
+      mobile: "640px",
 
       desktop: "1440px",
     },
     extend: {
       backgroundImage: {
         "bg-vector": "url('./src/assets/bg.svg')",
+        "illustration-desk": "url('./src/assets/illustrationdes.png')",
+        "illustration-mob": "url('./src/assets/illustrationmob.png')",
       },
       boxShadow: {
         filters: "0 0 3px 0 rgba(0, 0, 0, 0.2)",
