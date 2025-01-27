@@ -13,31 +13,31 @@
     <main>
       <section id="hero">
         <div
-          class="container mobile:h-max relative mx-auto mt-[90px] desktop:px-[118px] mobile:px-6 smallMobile:px-24"
+          class="container relative mx-auto mt-[90px] desktop:px-[118px] mobile:px-6 smallMobile:px-6"
         >
           <div
-            class="absolute desktop:left-[20px] desktop:top-[-68px] mobile:top-[-90px] mobile:right-6"
+            class="absolute desktop:left-[20px] desktop:top-[-68px] mobile:top-[-90px] mobile:right-6 smallMobile:top-[-90px] smallMobile:right-0"
           >
             <svg width="94" height="77">
               <use href="./src/assets/symbol-defs.svg#icon-Logo"></use>
             </svg>
           </div>
           <h1
-            class="font-bold mx-auto desktop:w-full mobile:w-[385px] text-text text-center mb-[30px] desktop:text-6xl desktop:leading-[54px] desktop:uppercase mobile:text-[24px] mobile:leading-8 mobile:normal-case mobile:mb-6"
+            class="font-bold mx-auto desktop:w-full mobile:w-[385px] smallMobile:w-[250px] text-text text-center mb-[30px] desktop:text-6xl desktop:leading-[54px] desktop:uppercase mobile:text-[24px] mobile:leading-8 mobile:normal-case mobile:mb-6"
           >
             Не встигаєш стежити за новими вакансіями?
           </h1>
           <div
-            class="flex desktop:justify-between mobile:gap-0 desktop:flex-row mobile:flex-col"
+            class="flex desktop:justify-between mobile:gap-0 desktop:flex-row mobile:flex-col smallMobile:flex-col"
           >
             <div class="flex flex-col items-start justify-center">
               <h2
-                class="font-bold text-text desktop:mb-[60px] desktop:text-3xl desktop:leading-[44px] mobile:text-sm mobile:leading-6 mobile:mb-[30px]"
+                class="font-bold text-text desktop:mb-[60px] desktop:text-3xl desktop:leading-[44px] mobile:text-sm mobile:leading-6 mobile:mb-[30px] smallMobile:text-sm smallMobile:leading-6 smallMobile:mb-[30px]"
               >
                 Тоді у нас є для тебе рішення!
               </h2>
               <ul
-                class="list-disc font-medium text-blackText ml-5 mb-[42px] desktop:text-md desktop:leading-10 mobile:text-s mobile:leading-7 mobile:mb-6"
+                class="list-disc font-medium text-blackText ml-5 desktop:mb-[42px] desktop:text-md desktop:leading-10 mobile:text-s mobile:leading-7 mobile:mb-6 smallMobile:text-s smallMobile:leading-7 smallMobile:mb-6"
               >
                 <li>Систематизуй свої відгуки та обирай найкращі</li>
                 <li>Зручний пошук, практичні фільтри та легкий відгук</li>
@@ -45,7 +45,7 @@
                 <li>Уся важлива інформація на одному екрані</li>
               </ul>
               <p
-                class="font-medium text-blackText desktop:text-md desktop:leading-7 desktop:mb-[80px] mobile:text-xs mobile:leading-5 mobile:mb-[-40px]"
+                class="font-medium text-blackText desktop:text-md desktop:leading-7 desktop:mb-[80px] mobile:text-xs mobile:leading-5 mobile:mb-[-60px] smallMobile:text-xs smallMobile::leading-5 smallMobile::mb-[-60px]"
               >
                 Переходь скоріше на наш сайт і починай свою
                 <span class="desktop:block">
@@ -55,22 +55,14 @@
 
               <a
                 href="https://job-tracker-frontend-three.vercel.app/vacancies"
-                class="border border-blackText rounded-xl py-3 desktop:w-[414px] desktop:h-[51px] mobile:w-[303px] mobile:h-[46px] desktop:px-11 mobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m desktop:leading-[27px] mobile:leading-[22px] desktop:static mobile:relative mobile:bottom-[-600px] desktop:mx-0 mobile:mx-auto mobile:text-center"
+                class="border border-blackText rounded-xl py-3 desktop:w-[414px] desktop:h-[51px] mobile:w-[303px] smallMobile:w-[303px] mobile:h-[46px] smallMobile:h-[46px] desktop:px-11 mobile:px-5 smallMobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m smallMobile:text-m desktop:leading-[27px] mobile:leading-[22px] smallMobile:leading-[22px] desktop:static mobile:relative smallMobile:relative mobile:bottom-[-550px] smallMobile:bottom-[-390px] desktop:mx-0 mobile:mx-auto smallMobile:mx-auto mobile:text-center smallMobile:text-center"
                 >JobTracker - твій онлайн помічник
               </a>
             </div>
 
-            <div class="mobile:relative mobile:top-[-50px] mobile:left-[-30px]">
-              <!-- <svg
-                class="flex items-center desktop:w-[533px] mobile:w-[552px] mobile:h-[552px]"
-              >
-                <use
-                  href="./src/assets/symbol-defs.svg#icon-illustration"
-                  class=""
-                  width="533"
-                  height="533"
-                ></use>
-              </svg> -->
+            <div
+              class="mobile:relative mobile:top-[-30px] smallMobile:relative smallMobile:top-[-80px]"
+            >
               <img
                 src="./src/assets/illustration.png"
                 alt="ілюстрація"
@@ -82,61 +74,67 @@
       </section>
       <section id="advantages">
         <div
-          class="mt-[120px] container desktop:px-[118px] mobile:px-6 mx-auto desktop:mb-[120px] mobile:mb-[60px]"
+          class="desktop:mt-[120px] mobile:mt-[90px] smallMobile:mt-[30px] container desktop:px-[118px] mobile:px-6 smallMobile:px-6 mx-auto desktop:mb-[120px] mobile:mb-[60px] smallMobile:mb-[60px]"
         >
-          <ul class="grid desktop:grid-cols-2 mobile:grid-cols-1 gap-6">
+          <ul
+            class="grid desktop:grid-cols-2 mobile:grid-cols-1 smallMobile:grid-cols-1 gap-6"
+          >
             <li
-              class="desktop:min-h-[566px] mobile:min-h-[400px] bg-heroBlue relative"
+              class="desktop:min-h-[566px] mobile:min-h-[400px] smallMobile:min-h-[298px] bg-heroBlue relative"
             >
               <div
-                class="desktop:mx-[25px] desktop:mt-[35px] mobile:mx-5 mobile:mt-[30px] text-left"
+                class="desktop:mx-[25px] desktop:mt-[35px] mobile:mx-5 mobile:mt-[30px] smallMobile:mx-[10px] smallMobile:mt-[20px] text-left"
               >
                 <h3
-                  class="font-bold desktop:text-3xl desktop:leading-[43px] mobile:text-sm mobile:leading-6 text-textheroBlue desktop:mb-[100px] mobile:mb-10"
+                  class="font-bold desktop:text-3xl desktop:leading-[43px] mobile:text-sm mobile:leading-6 smallMobile:text-sm smallMobile:leading-6 text-textheroBlue desktop:mb-[100px] mobile:mb-10 smallMobile:mb-[30px]"
                 >
                   Зручний інтерфейс
                 </h3>
                 <p
-                  class="font-medium desktop:text-md mobile:text-s desktop:leading-[27px] mobile:leading-[19px] text-textheroBlue"
+                  class="font-medium desktop:text-md mobile:text-s smallMobile:text-s desktop:leading-[27px] mobile:leading-[19px] smallMobile:leading-[19px] text-textheroBlue"
                 >
                   JobTracker розроблений так, щоб ви могли розібратися за лічені
                   хвилини. Додавайте вакансії, відстежуйте відгуки та оновлюйте
                   статуси в кілька кліків.
                 </p>
                 <p
-                  class="absolute desktop:bottom-[35px] mobile:bottom-[30px] font-regular desktop:text-s mobile:text-[11px] desktop:leading-5 mobile:leading-[27px] text-textheroBlue"
+                  class="absolute desktop:bottom-[35px] mobile:bottom-[30px] smallMobile:bottom-[20px] font-regular desktop:text-s mobile:text-[11px] smallMobile:text-xxs desktop:leading-5 mobile:leading-[27px] smallMobile:leading-[11px] text-textheroBlue"
                 >
                   «простота використання для всіх»
                 </p>
-                <svg class="w-[150px] absolute bottom-[20px] right-[20px]">
+                <svg
+                  class="desktop:w-[160px] desktop:h-[160px] mobile:w-[160px] mobile:h-[160px] smallMobile:w-[118px] smallMobile:h-[118px] absolute desktop:bottom-[20px] desktop:right-[20px] mobile:bottom-[20px] mobile:right-[20px] smallMobile:bottom-[10px] smallMobile:right-[10px]"
+                >
                   <use href="./src/assets/symbol-defs.svg#icon-Group"></use>
                 </svg>
               </div>
             </li>
             <li
-              class="desktop:min-h-[566px] mobile:min-h-[400px] bg-heroGreen relative"
+              class="desktop:min-h-[566px] mobile:min-h-[400px] smallMobile:min-h-[298px] bg-heroGreen relative"
             >
               <div
-                class="desktop:mx-[25px] desktop:mt-[35px] mobile:mx-5 mobile:mt-[30px] text-right"
+                class="desktop:mx-[25px] desktop:mt-[35px] mobile:mx-5 mobile:mt-[30px] smallMobile:mx-[10px] smallMobile:mt-[20px] text-right"
               >
                 <h3
-                  class="font-bold desktop:text-3xl desktop:leading-[43px] mobile:text-sm mobile:leading-6 text-textheroGreen desktop:mb-[100px] mobile:mb-10"
+                  class="font-bold desktop:text-3xl desktop:leading-[43px] mobile:text-sm mobile:leading-6 smallMobile:text-sm smallMobile:leading-6 text-textheroGreen desktop:mb-[100px] mobile:mb-10 smallMobile:mb-[30px]"
                 >
                   Інтеграція з платформами
                 </h3>
                 <p
-                  class="font-medium desktop:text-md mobile:text-s desktop:leading-[27px] mobile:leading-[19px] text-textheroGreen"
+                  class="font-medium desktop:text-md mobile:text-s smallMobile:text-s desktop:leading-[27px] mobile:leading-[19px] smallMobile:leading-[19px] text-textheroGreen"
                 >
                   Підключайте Djinni, LinkedIn та інші платформи, щоб
                   відстежувати надіслані резюме та спілкування з роботодавцями в
                   єдиному вікні.
                 </p>
                 <p
-                  class="absolute desktop:bottom-[35px] mobile:bottom-[30px] right-5 font-regular desktop:text-s mobile:text-[11px] desktop:leading-5 mobile:leading-[27px] text-textheroGreen"
+                  class="absolute desktop:bottom-[35px] mobile:bottom-[30px] smallMobile:bottom-[20px] font-regular desktop:text-s mobile:text-[11px] smallMobile:text-xxs desktop:leading-5 mobile:leading-[27px] smallMobile:leading-[11px] text-textheroGreen"
                 >
                   «всі інструменти пошуку роботи в одному місці»
                 </p>
-                <svg class="w-[160px] absolute bottom-[20px] left-[20px]">
+                <svg
+                  class="desktop:w-[160px] desktop:h-[160px] mobile:w-[160px] mobile:h-[160px] smallMobile:w-[118px] smallMobile:h-[118px] absolute desktop:bottom-[20px] desktop:right-[20px] mobile:bottom-[20px] mobile:right-[20px] smallMobile:bottom-[10px] smallMobile:right-[10px]"
+                >
                   <use
                     href="./src/assets/symbol-defs.svg#icon-Girl-with-phone"
                   ></use>
@@ -145,29 +143,31 @@
             </li>
 
             <li
-              class="desktop:min-h-[566px] mobile:min-h-[400px] bg-heroGreen relative mobile:order-4 desktop:order-3"
+              class="desktop:min-h-[566px] mobile:min-h-[400px] smallMobile:min-h-[298px] bg-heroGreen relative mobile:order-4 desktop:order-3"
             >
               <div
-                class="desktop:mx-[25px] desktop:mt-[35px] mobile:mx-5 mobile:mt-[30px] text-left"
+                class="desktop:mx-[25px] desktop:mt-[35px] mobile:mx-5 mobile:mt-[30px] smallMobile:mx-[10px] smallMobile:mt-[20px] text-left"
               >
                 <h3
-                  class="font-bold desktop:text-3xl desktop:leading-[43px] mobile:text-sm mobile:leading-6 text-textheroGreen desktop:mb-[100px] mobile:mb-10"
+                  class="font-bold desktop:text-3xl desktop:leading-[43px] mobile:text-sm mobile:leading-6 smallMobile:text-sm smallMobile:leading-6 text-textheroGreen desktop:mb-[100px] mobile:mb-10 smallMobile:mb-[30px]"
                 >
                   Єдина база всіх вакансій
                 </h3>
                 <p
-                  class="font-medium desktop:text-md mobile:text-s desktop:leading-[27px] mobile:leading-[19px] text-textheroGreen"
+                  class="font-medium desktop:text-md mobile:text-s smallMobile:text-s desktop:leading-[27px] mobile:leading-[19px] smallMobile:leading-[19px] text-textheroGreen"
                 >
                   Більше ніяких загублених посилань і заплутаних файлів.
                   Додавайте вакансії, зберігайте деталі по кожному відгуку і
                   керуйте всім процесом у зручному інтерфейсі.
                 </p>
                 <p
-                  class="absolute desktop:bottom-[35px] mobile:bottom-[30px] font-regular desktop:text-s mobile:text-[11px] desktop:leading-5 mobile:leading-[27px] text-textheroGreen"
+                  class="absolute desktop:bottom-[35px] mobile:bottom-[30px] smallMobile:bottom-[20px] font-regular desktop:text-s mobile:text-[11px] smallMobile:text-xxs desktop:leading-5 mobile:leading-[27px] smallMobile:leading-[11px] text-textheroGreen"
                 >
                   «зберігайте всі пропозиції в одному місці»
                 </p>
-                <svg class="w-[150px] absolute bottom-[20px] right-[20px]">
+                <svg
+                  class="desktop:w-[160px] desktop:h-[160px] mobile:w-[160px] mobile:h-[160px] smallMobile:w-[118px] smallMobile:h-[118px] absolute desktop:bottom-[20px] desktop:right-[20px] mobile:bottom-[20px] mobile:right-[20px] smallMobile:bottom-[10px] smallMobile:right-[10px]"
+                >
                   <use
                     href="./src//assets/symbol-defs.svg#icon-Manandtime"
                   ></use>
@@ -175,29 +175,31 @@
               </div>
             </li>
             <li
-              class="desktop:min-h-[566px] mobile:min-h-[400px] bg-heroBlue relative mobile:order-3 desktop:order-4"
+              class="desktop:min-h-[566px] mobile:min-h-[400px] smallMobile:min-h-[298px] bg-heroBlue relative mobile:order-3 desktop:order-4"
             >
               <div
-                class="desktop:mx-[25px] desktop:mt-[35px] mobile:mx-5 mobile:mt-[30px] text-right"
+                class="desktop:mx-[25px] desktop:mt-[35px] mobile:mx-5 mobile:mt-[30px] smallMobile:mx-[10px] smallMobile:mt-[20px] text-right"
               >
                 <h3
-                  class="font-bold desktop:text-3xl desktop:leading-[43px] mobile:text-sm mobile:leading-6 text-textheroBlue desktop:mb-[100px] mobile:mb-10"
+                  class="font-bold desktop:text-3xl desktop:leading-[43px] mobile:text-sm mobile:leading-6 smallMobile:text-sm smallMobile:leading-6 text-textheroBlue desktop:mb-[100px] mobile:mb-10 smallMobile:mb-[30px]"
                 >
                   Аналітика успішності
                 </h3>
                 <p
-                  class="font-medium desktop:text-md mobile:text-s desktop:leading-[27px] mobile:leading-[19px] text-textheroBlue"
+                  class="font-medium desktop:text-md mobile:text-s smallMobile:text-s desktop:leading-[27px] mobile:leading-[19px] smallMobile:leading-[19px] text-textheroBlue"
                 >
                   JobTracker аналізує ваші відгуки: скільки листів відкрили,
                   скільки резюме викликали інтерес та допомагає поліпшити
                   стратегію пошуку роботи.
                 </p>
                 <p
-                  class="absolute desktop:bottom-[35px] mobile:bottom-[30px] right-5 font-regular desktop:text-s mobile:text-[11px] desktop:leading-5 mobile:leading-[27px] text-textheroBlue"
+                  class="absolute desktop:bottom-[35px] mobile:bottom-[30px] smallMobile:bottom-[20px] font-regular desktop:text-s mobile:text-[11px] smallMobile:text-xxs desktop:leading-5 mobile:leading-[27px] smallMobile:leading-[11px] text-textheroBlue"
                 >
                   «зрозумійте, що працює, а що ні»
                 </p>
-                <svg class="w-[160px] absolute bottom-[20px] left-[20px]">
+                <svg
+                  class="desktop:w-[160px] desktop:h-[160px] mobile:w-[160px] mobile:h-[160px] smallMobile:w-[118px] smallMobile:h-[118px] absolute desktop:bottom-[20px] desktop:right-[20px] mobile:bottom-[20px] mobile:right-[20px] smallMobile:bottom-[10px] smallMobile:right-[10px]"
+                >
                   <use href="./src/assets/symbol-defs.svg#icon-Dashboard"></use>
                 </svg>
               </div>
@@ -216,13 +218,13 @@
               Редагувати вакансію
             </div>
             <div
-              class="desktop:border-[2.33px] mobile:border-[2.28px] border-addbtn border-solid rounded-tr-[7px] rounded-br-[7px] rounded-bl-[7px] desktop:w-[566px] mobile:w-[552px] desktop:pt-[32px] mobile:pt-[9px] pr-[14px] pb-[18px] pl-[14px]"
+              class="bg-white desktop:border-[2.33px] mobile:border-[2.28px] border-addbtn border-solid rounded-tr-[7px] rounded-br-[7px] rounded-bl-[7px] desktop:w-[566px] mobile:w-[552px] desktop:pt-[32px] mobile:pt-[9px] pr-[14px] pb-[18px] pl-[14px]"
             >
               <img src="./src/assets/screen.jpg" alt=" screen" />
             </div>
           </div>
           <div
-            class="flex flex-col justify-center desktop:items-left mobile:items-center mobile:order-1 mobile:relative desktop:static"
+            class="flex flex-col justify-center desktop:items-start mobile:items-center mobile:order-1 mobile:relative desktop:static"
           >
             <h2
               class="font-bold desktop:text-3xl mobile:text-sm desktop:leading-[43px] mobile:leading-6 text-text desktop:text-left mobile:text-center desktop:mb-[60px] mobile:mb-[30px]"
@@ -526,7 +528,9 @@
         <div
           class="container mx-auto desktop:px-[118px] mobile:px-6 flex desktop:flex-row desktop:gap-[116px] mobile:flex-col desktop:mt-[180px] mobile:mt-[90px] desktop:mb-[60px] mobile:mb-[60px] relative"
         >
-          <div class="flex flex-col justify-center items-center">
+          <div
+            class="flex flex-col justify-center desktop:items-start mobile:items-center"
+          >
             <h2
               class="font-bold desktop:text-3xl mobile:text-sm desktop:leading-[43px] mobile:leading-6 text-text desktop:mb-[60px] mobile:mb-[30px] desktop:text-left mobile:text-center"
             >
@@ -545,18 +549,12 @@
               >Розпочати аналізувати свої відгуки</a
             >
           </div>
-          <div class="mobile:relative mobile:top-[-50px]">
-            <svg
-              class="flex items-center desktop:w-[589px] desktop:h-[603px] mobile:w-[585px] mobile:h-[562px] mobile:mb-[50px]"
-            >
-              <use
-                href="./src/assets/symbol-defs.svg#icon-Statistacs-page"
-                width="140%"
-                height="140%"
-                class="desktop:[x:-160px] desktop:[y:-70px] mobile:[x:-130px] mobile:[y:-82px]"
-              ></use>
-            </svg>
-          </div>
+
+          <img
+            src="./src/assets/Group 10.jpg"
+            alt="ілюстрація"
+            class="mobile:w-[100%] mobile:h-[100%] desktop:mb-0 mobile:mb-[30px]"
+          />
         </div>
       </section>
       <section id="CTA">
@@ -645,9 +643,5 @@
         </p>
       </div>
     </footer>
-    <!-- <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
-    <div id="app"></div> -->
-    <!-- 
-    <script type="module" src="/src/main.js"></script> -->
   </body>
 </html>

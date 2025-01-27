@@ -14,6 +14,7 @@ export default {
       bold: "700",
     },
     fontSize: {
+      xxs: "8px",
       xs: "12px",
       s: "14px",
       m: "16px",
@@ -32,9 +33,9 @@ export default {
       "9xl": "48px",
     },
     screens: {
-      smallMobile: "320px",
+      smallMobile: "480px",
 
-      mobile: "640px",
+      mobile: "600px",
 
       desktop: "1440px",
     },
