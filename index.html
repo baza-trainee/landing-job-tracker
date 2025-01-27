@@ -257,7 +257,7 @@
             </p>
             <ul>
               <li
-                class="absolute desktop:top-[-59px] desktop:left-[350px] mobile:top-[-56px] mobile:left-[188px]"
+                class="absolute desktop:top-[-59px] desktop:left-[350px] mobile:top-[-56px] mobile:left-[200px]"
               >
                 <div
                   class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersBlue flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
@@ -472,7 +472,7 @@
                 </div>
               </li>
               <li
-                class="absolute desktop:left-[350px] desktop:top-[720px] mobile:left-[188px] mobile:top-[385px] pb-[14px]"
+                class="absolute desktop:left-[350px] desktop:top-[720px] mobile:left-[200px] mobile:top-[385px] pb-[14px]"
               >
                 <div
                   class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersGreen flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
@@ -556,22 +556,24 @@
         </div>
       </section>
       <section id="CTA">
-        <div class="container px-[118px] mx-auto flex flex-col justify-center">
+        <div
+          class="container desktop:px-[118px] mobile:px-6 mx-auto flex flex-col justify-center desktop:mb-[120px] mobile:mb-[60px]"
+        >
           <h2
-            class="font-bold text-6xl leading-[54px] text-blackText mb-[90px] uppercase text-center"
+            class="font-bold desktop:text-6xl mobile:text-[24px] desktop:leading-[54px] mobile:leading-8 text-blackText desktop:mb-[90px] mobile:mb-[30px] uppercase text-center"
           >
             Перший крок до нової роботи - з
             <span class="text-text">JobTracker!</span>
           </h2>
           <p
-            class="font-medium text-3xl text-blackText leading-[43px] mb-[60px] text-center"
+            class="font-medium desktop:text-3xl mobile:text-sm text-blackText desktop:leading-[43px] mobile:leading-6 mb-[60px] text-center"
           >
             Перетвори хаос із десятками резюме на організований процес. Спробуй
             <span class="text-text">JobTracker</span> і будь на крок попереду.
           </p>
           <a
-            href=""
-            class="w-[628px] h-[51px] mx-auto border border-blackText rounded-xl py-3 px-12 bg-btn text-blackText font-bold text-md leading-[27px]"
+            href="https://job-tracker-frontend-three.vercel.app/vacancies"
+            class="desktop:w-[628px] mobile:w-[463px] desktop:h-[51px] mobile:h-[46px] mx-auto border border-blackText rounded-xl py-3 desktop:px-12 mobile:px-5 bg-btn text-blackText desktop:font-bold mobile:font-medium desktop:text-md mobile:text-m desktop:leading-[27px] mobile:leading-[22px]"
             >ПОЧАТИ СВІЙ ШЛЯХ У
             <span class="text-textheroBlue font-bold"
               >JOBTRACKER БЕЗКОШТОВНО</span
@@ -581,44 +583,52 @@
       </section>
     </main>
     <footer>
-      <div class="container px-[118px] mx-auto">
+      <div class="container desktop:px-[118px] mobile:px-[24px] mx-auto">
         <p
-          class="text-center mb-[60px] font-bold text-3xl text-blackText leading-[43px]"
+          class="text-center desktop:mb-[60px] mobile:mb-[30px] font-bold desktop:text-3xl mobile:text-sm text-blackText desktop:leading-[43px] mobile:leading-6"
         >
           Для додаткової інформації ви можете зв'язатися з нами в соц. мережах
         </p>
-        <ul class="flex flex-row justify-between mb-[108px]">
-          <li class="flex flex-row gap-[10px] items-center">
+        <ul
+          class="grid desktop:grid-cols-4 mobile:grid-cols-2 desktop:gap-[136px] mobile:gap-[30px] desktop:mb-[108px] mb-[30px]"
+        >
+          <li class="flex flex-row gap-[10px] mx-auto items-center">
             <!-- <svg class="w-[38px] h-[38px]">
               <use href="./src/assets/symbol-defs.svg#icon-Inst"></use>
             </svg> -->
             <img
               src="./src/assets/Inst.png"
               alt="instagram"
-              class="w-[38px] h-[38px]"
+              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px]"
             />
             <p class="font-medium text-md leading-[27px] text-blackText">
               Instagram
             </p>
           </li>
-          <li class="flex flex-row gap-[10px] items-center">
-            <svg class="w-[38px] h-[38px]">
+          <li class="flex flex-row gap-[10px] mx-auto items-center">
+            <svg
+              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px]"
+            >
               <use href="./src/assets/symbol-defs.svg#icon-teleg"></use>
             </svg>
             <p class="font-medium text-md leading-[27px] text-blackText">
               Telegram
             </p>
           </li>
-          <li class="flex flex-row gap-[10px] items-center">
-            <svg class="w-[38px] h-[38px]">
+          <li class="flex flex-row gap-[10px] mx-auto items-center">
+            <svg
+              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px]"
+            >
               <use href="./src/assets/symbol-defs.svg#icon-link"></use>
             </svg>
             <p class="font-medium text-md leading-[27px] text-blackText">
               LinkedIn
             </p>
           </li>
-          <li class="flex flex-row gap-[10px] items-center">
-            <svg class="w-[38px] h-[38px]">
+          <li class="flex flex-row gap-[10px] mx-auto items-center">
+            <svg
+              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px]"
+            >
               <use href="./src/assets/symbol-defs.svg#icon-Googleicon"></use>
             </svg>
             <p class="font-medium text-md leading-[27px] text-blackText">
