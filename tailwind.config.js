@@ -33,7 +33,7 @@ export default {
       "9xl": "48px",
     },
     screens: {
-      smallMobile: "480px",
+      smallMobile: "375px",
 
       mobile: "600px",
 
