@@ -47,6 +47,8 @@ export default {
       },
       boxShadow: {
         filters: "0 0 3px 0 rgba(0, 0, 0, 0.2)",
+        filtersmobile: "0 0 2px 0 rgba(0, 0, 0, 0.2)",
+        filterssmallmobile: "0 0 1px 0 rgba(0, 0, 0, 0.2)",
       },
       colors: {
         backgroundMain: "#fdfeff",

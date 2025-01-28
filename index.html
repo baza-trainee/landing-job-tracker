@@ -209,30 +209,32 @@
       </section>
       <section id="add">
         <div
-          class="container desktop:px-[118px] mobile:px-6 flex desktop:flex-row mobile:flex-col desktop:gap-[134px] mobile:gap-0 mx-auto desktop:pb-[88px] desktop:mb-[120px] mobile:pb-0 mobile:mb-[250px]"
+          class="container desktop:px-[118px] mobile:px-6 smallMobile:px-6 flex desktop:flex-row mobile:flex-col smallMobile:flex-col desktop:gap-[134px] mobile:gap-0 smallMobile:gap-0 mx-auto desktop:mb-[200px] mobile:mb-[250px] smallMobile:mb-[160px]"
         >
-          <div class="flex flex-col mobile:order-2 mx-auto">
+          <div
+            class="flex flex-col mobile:order-2 smallMobile:order-2 mx-auto mobile:mt-[-60px] smallMobile:mt-[-50px]"
+          >
             <div
-              class="desktop:w-[144px] mobile:w-[140px] desktop:h-[30px] mobile:h-[29px] rounded-t-[7px] desktop:px-[7px] desktop::py-[14px] mobile:px-[6px] mobile:py-[13px] bg-addbtn flex justify-center items-center font-medium text-[11px] leading-[15px] text-center"
+              class="desktop:w-[144px] mobile:w-[140px] smallMobile:w-[103px] desktop:h-[30px] mobile:h-[29px] smallMobile:h-[21px] desktop:rounded-t-[7px] mobile:rounded-t-[7px] smallMobile:rounded-t-[5px] desktop:px-[7px] desktop::py-[14px] mobile:px-[6px] mobile:py-[13px] smallMobile:px-[5px] smallMobile:py-[10px] bg-addbtn flex justify-center items-center font-medium desktop:text-[11px] mobile:text-[11px] smallMobile:text-[8px] desktop:leading-[15px] mobile:leading-[15px] smallMobile:leading-[11px] text-center"
             >
               Редагувати вакансію
             </div>
             <div
-              class="bg-white desktop:border-[2.33px] mobile:border-[2.28px] border-addbtn border-solid rounded-tr-[7px] rounded-br-[7px] rounded-bl-[7px] desktop:w-[566px] mobile:w-[552px] desktop:pt-[32px] mobile:pt-[9px] pr-[14px] pb-[18px] pl-[14px]"
+              class="bg-white desktop:border-[2.33px] mobile:border-[2.28px] smallMobile:border-[1.68px] border-addbtn border-solid desktop:rounded-tr-[7px] desktop:rounded-br-[7px] desktop:rounded-bl-[7px] mobile:rounded-tr-[7px] mobile:rounded-br-[7px] mobile:rounded-bl-[7px] smallMobile:rounded-tr-[5px] smallMobile:rounded-br-[5px] smallMobile:rounded-bl-[5px] desktop:w-[566px] mobile:w-[552px] smallMobile:w-[310px] desktop:pt-[32px] mobile:pt-[32px] smallMobile:pt-[23px] desktop:pr-[14px] desktop:pb-[18px] desktop:pl-[14px] mobile:pr-[14px] mobile:pb-[18px] mobile:pl-[14px] smallMobile:pr-[10px] smallMobile:pb-[13px] smallMobile:pl-[10px]"
             >
               <img src="./src/assets/screen.jpg" alt=" screen" />
             </div>
           </div>
           <div
-            class="flex flex-col justify-center desktop:items-start mobile:items-center mobile:order-1 mobile:relative desktop:static"
+            class="flex flex-col justify-center desktop:items-start mobile:items-center smallMobile:items-center mobile:order-1 smallMobile:order-1 mobile:relative smallMobile:relative desktop:static"
           >
             <h2
-              class="font-bold desktop:text-3xl mobile:text-sm desktop:leading-[43px] mobile:leading-6 text-text desktop:text-left mobile:text-center desktop:mb-[60px] mobile:mb-[30px]"
+              class="font-bold desktop:text-3xl mobile:text-sm smallMobile:text-sm desktop:leading-[43px] mobile:leading-6 smallMobile:leading-6 text-text desktop:text-left mobile:text-center smallMobile:text-center desktop:mb-[60px] mobile:mb-[30px] smallMobile:mb-[30px]"
             >
               Все в одному місці, все під контролем
             </h2>
             <p
-              class="font-medium desktop:text-md mobile:text-s desktop:leading-7 mobile:leading-5 text-blackText desktop:text-left mobile:text-center mb-[60px]"
+              class="font-medium desktop:text-md mobile:text-s smallMobile:text-s desktop:leading-7 mobile:leading-5 smallMobile:leading-5 text-blackText desktop:text-left mobile:text-center smallMobile:text-center desktop:mb-[60px] mobile:mb-[60px] smallMobile:mb-[30px]"
             >
               Додавайте та оновлюйте відгуки за допомогою інструментів
               JobTracker. Знайти вакансію легко, а ось стежити за відгуками -
@@ -241,63 +243,65 @@
 
             <a
               href="https://job-tracker-frontend-three.vercel.app/vacancies"
-              class="desktop:w-[390px] mobile:w-[283px] desktop:h-[51px] mobile:h-[46px] border border-blackText rounded-xl py-3 desktop:px-11 mobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m desktop:leading-[27px] mobile:leading-[22px] desktop:static mobile:absolute mobile:bottom-[-600px]"
+              class="desktop:w-[390px] mobile:w-[283px] smallMobile:w-[283px] desktop:h-[51px] mobile:h-[46px] smallMobile:h-[46px] border border-blackText rounded-xl py-3 desktop:px-11 mobile:px-5 smallMobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m smallMobile:text-m desktop:leading-[27px] mobile:leading-[22px] smallMobile:leading-[22px] desktop:static mobile:relative smallMobile:relative mobile:bottom-[-560px] smallMobile:bottom-[-320px]"
               >Керуйте відгуками у JobTracker</a
             >
           </div>
         </div>
       </section>
       <section id="filters">
-        <div class="mx-auto container desktop:px-[118px] mobile:px-6">
+        <div
+          class="mx-auto container desktop:px-[118px] mobile:px-6 smallMobile:px-6"
+        >
           <div class="relative flex justify-center desktop:w-[1026px] mx-auto">
             <img
               src="./src/assets/Eclipse.png"
               alt="elipse"
-              class="desktop:w-[812px] desktop:h-[826px] mobile:w-[445px] mobile:h-[445px]"
+              class="desktop:w-[812px] desktop:h-[826px] mobile:w-[445px] mobile:h-[445px] smallMobile:w-[290px] smallMobile:h-[290px]"
             />
             <p
-              class="absolute desktop:left-[270px] desktop:bottom-[330px] mobile:left-[145px] mobile:bottom-[190px] desktop:w-[486px] mobile:w-[262px] font-bold desktop:text-3xl mobile:text-sm desktop:leading-[43px] mobile:leading-6 text-center text-text"
+              class="absolute desktop:left-[270px] desktop:bottom-[330px] mobile:left-[145px] mobile:bottom-[190px] smallMobile:left-[55px] smallMobile:bottom-[120px] desktop:w-[486px] mobile:w-[262px] smallMobile:w-[207px] font-bold desktop:text-3xl mobile:text-sm smallMobile:text-xs desktop:leading-[43px] mobile:leading-6 smallMobile:leading-[19px] text-center text-text"
             >
               Слідкуйте за статусом резюме, збирайте аналітику та систематизуйте
               процес
             </p>
             <ul>
               <li
-                class="absolute desktop:top-[-59px] desktop:left-[350px] mobile:top-[-56px] mobile:left-[200px]"
+                class="absolute desktop:top-[-59px] desktop:left-[350px] mobile:top-[-56px] mobile:left-[200px] smallMobile:top-[-40px] smallMobile:left-[96px]"
               >
                 <div
-                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersBlue flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] smallMobile:h-[12px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] smallMobile:rounded-t-[3px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] smallMobile:px-[2px] smallMobile:py-1 bg-filtersBlue flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] smallMobile:text-[7px] text-blackText desktop:shadow-filters mobile:shadow-filters smallMobile:shadow-filterssmallmobile"
                 >
                   Відправлені
                 </div>
                 <div
-                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersBlue border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
+                  class="desktop:w-[326px] mobile:w-[175px] smallMobile:w-[115px] bg-white desktop:border-4 mobile:border-[2.15px] smallMobile:border-[1.54px] border-filtersBlue border-solid desktop:p-6 mobile:p-3 smallMobile:p-[9px] desktop:rounded-tr-xl mobile:rounded-tr-md smallMobile:rounded-tr-[5px] desktop:rounded-bl-xl mobile:rounded-bl-md smallMobile:rounded-bl-[5px] desktop:rounded-br-xl mobile:rounded-br-md smallMobile:rounded-br-[5px]"
                 >
                   <div
-                    class="bg-filtersBlue desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                    class="bg-filtersBlue desktop:rounded-xl mobile:rounded-md smallMobile:rounded-[5px] desktop:p-3 mobile:p-[6px] smallMobile:p-[4px] bg-opacity-40"
                   >
                     <h2
-                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                      class="font-medium desktop:text-m mobile:text-[8px] smallMobile:text-[6px] text-blackText"
                     >
                       Junior UX/UI designer
                     </h2>
                     <p
-                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                      class="font-medium desktop:text-xs mobile:text-[6px] smallMobile:text-[4px] text-blackText"
                     >
                       Ajax Systems
                     </p>
                     <div
-                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px] smallMobile:gap-[2px]"
                     >
                       <svg
-                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3 smallMobile:w-[9px] smallMobile:h-[9px]"
                       >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
                       <p
-                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                        class="font-medium desktop:text-s mobile:text-[7px] smallMobile:text-[5px] text-blackText"
                       >
                         Офіс Київ
                       </p>
@@ -306,41 +310,41 @@
                 </div>
               </li>
               <li
-                class="absolute desktop:right-[-19px] desktop:top-[150px] mobile:top-[58px] mobile:right-[-10px]"
+                class="absolute desktop:right-[-19px] desktop:top-[150px] mobile:top-[58px] mobile:right-[-10px] smallMobile:top-[40px] smallMobile:right-[-20px]"
               >
                 <div
-                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersPerpule flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] smallMobile:h-[12px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] smallMobile:rounded-t-[3px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] smallMobile:px-[2px] smallMobile:py-1 bg-filtersPerpule flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] smallMobile:text-[7px] text-blackText desktop:shadow-filters mobile:shadow-filters smallMobile:shadow-filterssmallmobile"
                 >
                   HR співбесіда
                 </div>
                 <div
-                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersPerpule border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
+                  class="desktop:w-[326px] mobile:w-[175px] smallMobile:w-[115px] bg-white desktop:border-4 mobile:border-[2.15px] smallMobile:border-[1.54px] border-filtersPerpule border-solid desktop:p-6 mobile:p-3 smallMobile:p-[9px] desktop:rounded-tr-xl mobile:rounded-tr-md smallMobile:rounded-tr-[5px] desktop:rounded-bl-xl mobile:rounded-bl-md smallMobile:rounded-bl-[5px] desktop:rounded-br-xl mobile:rounded-br-md smallMobile:rounded-br-[5px]"
                 >
                   <div
-                    class="bg-filtersPerpule desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                    class="bg-filtersPerpule desktop:rounded-xl mobile:rounded-md smallMobile:rounded-[5px] desktop:p-3 mobile:p-[6px] smallMobile:p-[4px] bg-opacity-40"
                   >
                     <h2
-                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                      class="font-medium desktop:text-m mobile:text-[8px] smallMobile:text-[6px] text-blackText"
                     >
                       JUX/UI designer
                     </h2>
                     <p
-                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                      class="font-medium desktop:text-xs mobile:text-[6px] smallMobile:text-[4px] text-blackText"
                     >
                       Epam
                     </p>
                     <div
-                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px] smallMobile:gap-[2px]"
                     >
                       <svg
-                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3 smallMobile:w-[9px] smallMobile:h-[9px]"
                       >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
                       <p
-                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                        class="font-medium desktop:text-s mobile:text-[7px] smallMobile:text-[5px] text-blackText"
                       >
                         Remote
                       </p>
@@ -349,41 +353,41 @@
                 </div>
               </li>
               <li
-                class="absolute desktop:left-[-19px] desktop:top-[150px] mobile:left-[-10px] mobile:top-[58px]"
+                class="absolute desktop:left-[-19px] desktop:top-[150px] mobile:left-[-10px] mobile:top-[58px] smallMobile:top-[40px] smallMobile:left-[-20px]"
               >
                 <div
-                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filterslightGreen flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] smallMobile:h-[12px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] smallMobile:rounded-t-[3px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] smallMobile:px-[2px] smallMobile:py-1 bg-filterslightGreen flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] smallMobile:text-[7px] text-blackText desktop:shadow-filters mobile:shadow-filters smallMobile:shadow-filterssmallmobile"
                 >
                   Збережені
                 </div>
                 <div
-                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filterslightGreen border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
+                  class="desktop:w-[326px] mobile:w-[175px] smallMobile:w-[115px] bg-white desktop:border-4 mobile:border-[2.15px] smallMobile:border-[1.54px] border-filterslightGreen border-solid desktop:p-6 mobile:p-3 smallMobile:p-[9px] desktop:rounded-tr-xl mobile:rounded-tr-md smallMobile:rounded-tr-[5px] desktop:rounded-bl-xl mobile:rounded-bl-md smallMobile:rounded-bl-[5px] desktop:rounded-br-xl mobile:rounded-br-md smallMobile:rounded-br-[5px]"
                 >
                   <div
-                    class="bg-filterslightGreen desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                    class="bg-filterslightGreen desktop:rounded-xl mobile:rounded-md smallMobile:rounded-[5px] desktop:p-3 mobile:p-[6px] smallMobile:p-[4px] bg-opacity-40"
                   >
                     <h2
-                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                      class="font-medium desktop:text-m mobile:text-[8px] smallMobile:text-[6px] text-blackText"
                     >
                       Junior UX/UI designer
                     </h2>
                     <p
-                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                      class="font-medium desktop:text-xs mobile:text-[6px] smallMobile:text-[4px] text-blackText"
                     >
                       Ajax Systems
                     </p>
                     <div
-                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px] smallMobile:gap-[2px]"
                     >
                       <svg
-                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3 smallMobile:w-[9px] smallMobile:h-[9px]"
                       >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
                       <p
-                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                        class="font-medium desktop:text-s mobile:text-[7px] smallMobile:text-[5px] text-blackText"
                       >
                         Офіс Київ
                       </p>
@@ -392,41 +396,41 @@
                 </div>
               </li>
               <li
-                class="absolute desktop:left-[-19px] desktop:top-[490px] mobile:left-[-10px] mobile:top-[260px]"
+                class="absolute desktop:left-[-19px] desktop:top-[490px] mobile:left-[-10px] mobile:top-[260px] smallMobile:left-[-20px] smallMobile:top-[160px]"
               >
                 <div
-                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersRed flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] smallMobile:h-[12px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] smallMobile:rounded-t-[3px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] smallMobile:px-[2px] smallMobile:py-1 bg-filtersRed flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] smallMobile:text-[7px] text-blackText desktop:shadow-filters mobile:shadow-filters smallMobile:shadow-filterssmallmobile"
                 >
                   Відмова
                 </div>
                 <div
-                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersRed border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
+                  class="desktop:w-[326px] mobile:w-[175px] smallMobile:w-[115px] bg-white desktop:border-4 mobile:border-[2.15px] smallMobile:border-[1.54px] border-filtersRed border-solid desktop:p-6 mobile:p-3 smallMobile:p-[9px] desktop:rounded-tr-xl mobile:rounded-tr-md smallMobile:rounded-tr-[5px] desktop:rounded-bl-xl mobile:rounded-bl-md smallMobile:rounded-bl-[5px] desktop:rounded-br-xl mobile:rounded-br-md smallMobile:rounded-br-[5px]"
                 >
                   <div
-                    class="bg-filtersRed desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                    class="bg-filtersRed desktop:rounded-xl mobile:rounded-md smallMobile:rounded-[5px] desktop:p-3 mobile:p-[6px] smallMobile:p-[4px] bg-opacity-40"
                   >
                     <h2
-                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                      class="font-medium desktop:text-m mobile:text-[8px] smallMobile:text-[6px] text-blackText"
                     >
                       JUX/UI designer
                     </h2>
                     <p
-                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                      class="font-medium desktop:text-xs mobile:text-[6px] smallMobile:text-[4px] text-blackText"
                     >
                       Epam
                     </p>
                     <div
-                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px] smallMobile:gap-[2px]"
                     >
                       <svg
-                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3 smallMobile:w-[9px] smallMobile:h-[9px]"
                       >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
                       <p
-                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                        class="font-medium desktop:text-s mobile:text-[7px] smallMobile:text-[5px] text-blackText"
                       >
                         Remote
                       </p>
@@ -435,41 +439,41 @@
                 </div>
               </li>
               <li
-                class="absolute desktop:right-[-19px] desktop:top-[490px] mobile:right-[-10px] mobile:top-[260px]"
+                class="absolute desktop:right-[-19px] desktop:top-[490px] mobile:right-[-10px] mobile:top-[260px] smallMobile:right-[-20px] smallMobile:top-[160px]"
               >
                 <div
-                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersGrey flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] smallMobile:h-[12px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] smallMobile:rounded-t-[3px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] smallMobile:px-[2px] smallMobile:py-1 bg-filtersGrey flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] smallMobile:text-[7px] text-blackText desktop:shadow-filters mobile:shadow-filters smallMobile:shadow-filterssmallmobile"
                 >
                   Технічна співбесіда
                 </div>
                 <div
-                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersGrey border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
+                  class="desktop:w-[326px] mobile:w-[175px] smallMobile:w-[115px] bg-white desktop:border-4 mobile:border-[2.15px] smallMobile:border-[1.54px] border-filtersGrey border-solid desktop:p-6 mobile:p-3 smallMobile:p-[9px] desktop:rounded-tr-xl mobile:rounded-tr-md smallMobile:rounded-tr-[5px] desktop:rounded-bl-xl mobile:rounded-bl-md smallMobile:rounded-bl-[5px] desktop:rounded-br-xl mobile:rounded-br-md smallMobile:rounded-br-[5px]"
                 >
                   <div
-                    class="bg-filtersGrey desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                    class="bg-filtersGrey desktop:rounded-xl mobile:rounded-md smallMobile:rounded-[5px] desktop:p-3 mobile:p-[6px] smallMobile:p-[4px] bg-opacity-40"
                   >
                     <h2
-                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                      class="font-medium desktop:text-m mobile:text-[8px] smallMobile:text-[6px] text-blackText"
                     >
                       Junior/Trainee UX/UI designer
                     </h2>
                     <p
-                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                      class="font-medium desktop:text-xs mobile:text-[6px] smallMobile:text-[4px] text-blackText"
                     >
                       Skelar
                     </p>
                     <div
-                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px] smallMobile:gap-[2px]"
                     >
                       <svg
-                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3 smallMobile:w-[9px] smallMobile:h-[9px]"
                       >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
                       <p
-                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                        class="font-medium desktop:text-s mobile:text-[7px] smallMobile:text-[5px] text-blackText"
                       >
                         Офіс Львів
                       </p>
@@ -478,41 +482,41 @@
                 </div>
               </li>
               <li
-                class="absolute desktop:left-[350px] desktop:top-[720px] mobile:left-[200px] mobile:top-[385px] pb-[14px]"
+                class="absolute desktop:left-[350px] desktop:top-[720px] mobile:left-[200px] mobile:top-[385px] smallMobile:bottom-[-32px] smallMobile:left-[96px] pb-[14px]"
               >
                 <div
-                  class="w-fit desktop:h-[39px] mobile:h-[21px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] bg-filtersGreen flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] text-blackText shadow-filters"
+                  class="w-fit desktop:h-[39px] mobile:h-[21px] smallMobile:h-[12px] desktop:rounded-t-[8px] mobile:rounded-t-[4px] smallMobile:rounded-t-[3px] desktop:px-[6px] desktop:py-[12px] mobile:px-[3px] mobile:py-[6px] smallMobile:px-[2px] smallMobile:py-1 bg-filtersGreen flex justify-center items-center font-medium desktop:text-md mobile:text-[10px] smallMobile:text-[7px] text-blackText desktop:shadow-filters mobile:shadow-filters smallMobile:shadow-filterssmallmobile"
                 >
                   Офер
                 </div>
                 <div
-                  class="desktop:w-[326px] mobile:w-[175px] bg-white desktop:border-4 mobile:border-[2.15px] border-filtersGreen border-solid desktop:p-6 mobile:p-3 desktop:rounded-tr-xl mobile:rounded-tr-md desktop:rounded-bl-xl mobile:rounded-bl-md desktop:rounded-br-xl mobile:rounded-br-md"
+                  class="desktop:w-[326px] mobile:w-[175px] smallMobile:w-[125px] bg-white desktop:border-4 mobile:border-[2.15px] smallMobile:border-[1.54px] border-filtersGreen border-solid desktop:p-6 mobile:p-3 smallMobile:p-[9px] desktop:rounded-tr-xl mobile:rounded-tr-md smallMobile:rounded-tr-[5px] desktop:rounded-bl-xl mobile:rounded-bl-md smallMobile:rounded-bl-[5px] desktop:rounded-br-xl mobile:rounded-br-md smallMobile:rounded-br-[5px]"
                 >
                   <div
-                    class="bg-filtersGreen desktop:rounded-xl mobile:rounded-md desktop:p-3 mobile:p-[6px] bg-opacity-40"
+                    class="bg-filtersGreen desktop:rounded-xl mobile:rounded-md smallMobile:rounded-[5px] desktop:p-3 mobile:p-[6px] smallMobile:p-[4px] bg-opacity-40"
                   >
                     <h2
-                      class="font-medium desktop:text-m mobile:text-[8px] text-blackText"
+                      class="font-medium desktop:text-m mobile:text-[8px] smallMobile:text-[6px] text-blackText"
                     >
                       Junior UX/UI designer
                     </h2>
                     <p
-                      class="font-medium desktop:text-xs mobile:text-[6px] text-blackText"
+                      class="font-medium desktop:text-xs mobile:text-[6px] smallMobile:text-[4px] text-blackText"
                     >
                       Ajax Systems
                     </p>
                     <div
-                      class="flex items-center desktop:gap-1 mobile:gap-[2px]"
+                      class="flex items-center desktop:gap-1 mobile:gap-[2px] smallMobile:gap-[2px]"
                     >
                       <svg
-                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3"
+                        class="desktop:w-6 mobile:w-3 desktop:h-6 mobile:h-3 smallMobile:w-[9px] smallMobile:h-[9px]"
                       >
                         <use
                           href="./src/assets/symbol-defs.svg#icon-Location"
                         ></use>
                       </svg>
                       <p
-                        class="font-medium desktop:text-s mobile:text-[7px] text-blackText"
+                        class="font-medium desktop:text-s mobile:text-[7px] smallMobile:text-[5px] text-blackText"
                       >
                         Офіс Київ
                       </p>
@@ -526,18 +530,18 @@
       </section>
       <section id="analitics">
         <div
-          class="container mx-auto desktop:px-[118px] mobile:px-6 flex desktop:flex-row desktop:gap-[116px] mobile:flex-col desktop:mt-[180px] mobile:mt-[90px] desktop:mb-[60px] mobile:mb-[60px] relative"
+          class="container mx-auto desktop:px-[118px] mobile:px-6 smallMobile:px-6 flex desktop:flex-row desktop:gap-[116px] mobile:flex-col smallMobile:flex-col desktop:mt-[180px] mobile:mt-[90px] smallMobile:mt-[60px] desktop:mb-[60px] mobile:mb-[60px] smallMobile:mb-[60px] relative"
         >
           <div
-            class="flex flex-col justify-center desktop:items-start mobile:items-center"
+            class="flex flex-col justify-center desktop:items-start mobile:items-center smallMobile:items-center"
           >
             <h2
-              class="font-bold desktop:text-3xl mobile:text-sm desktop:leading-[43px] mobile:leading-6 text-text desktop:mb-[60px] mobile:mb-[30px] desktop:text-left mobile:text-center"
+              class="font-bold desktop:text-3xl mobile:text-sm smallMobile:tet-sm desktop:leading-[43px] mobile:leading-6 smallMobile:leading-6 text-text desktop:mb-[60px] mobile:mb-[30px] smallMobile:mb-[30px] desktop:text-left mobile:text-center smallMobile:text-center"
             >
               Почніть аналізувати свої результати з JobTracker!
             </h2>
             <p
-              class="font-medium desktop:text-md mobile:text-s text-blackText desktop:leading-7 mobile:leading-5 desktop:mb-[60px] desktop:text-left mobile:text-center"
+              class="font-medium desktop:text-md mobile:text-s smallMobile:text-s text-blackText desktop:leading-7 mobile:leading-5 smallMobile:leading-5 desktop:mb-[60px] mobile:mb-0 smallMobile:mb-0 desktop:text-left mobile:text-center smallMobile:text-center"
             >
               Не втрачайте шанс виділитися із сотень кандидатів. Дивіться
               статистику своїх відгуків, аналізуйте причини відмов, плануйте
@@ -545,7 +549,7 @@
             </p>
             <a
               href="https://job-tracker-frontend-three.vercel.app/vacancies"
-              class="desktop:w-[434px] desktop:h-[51px] mobile:w-[317px] mobile:h-[46px] border border-blackText rounded-xl py-3 desktop:px-12 mobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m desktop:leading-[27px] mobile:leading-[22px] desktop:static mobile:absolute mobile:bottom-[0px]"
+              class="desktop:w-[434px] desktop:h-[51px] mobile:w-[317px] mobile:h-[46px] smallMobile:w-[317px] smallMobile:h-[46px] border border-blackText rounded-xl py-3 desktop:px-12 mobile:px-5 smallMobile:px-5 bg-btn text-blackText font-medium desktop:text-md mobile:text-m smallMobile:text-m desktop:leading-[27px] mobile:leading-[22px] smallMobile:leading-[22px] desktop:static mobile:absolute smallMobile:absolute mobile:bottom-0 smallMobile:bottom-[-16px]"
               >Розпочати аналізувати свої відгуки</a
             >
           </div>
@@ -553,46 +557,51 @@
           <img
             src="./src/assets/Group 10.jpg"
             alt="ілюстрація"
-            class="mobile:w-[100%] mobile:h-[100%] desktop:mb-0 mobile:mb-[30px]"
+            class="mobile:w-[100%] mobile:h-[100%] desktop:mb-0 mobile:mb-[20px] smallMobile:mb-[20px]"
           />
         </div>
       </section>
       <section id="CTA">
         <div
-          class="container desktop:px-[118px] mobile:px-6 mx-auto flex flex-col justify-center desktop:mb-[120px] mobile:mb-[60px]"
+          class="container desktop:px-[118px] mobile:px-6 smallMobile:px-6 mx-auto flex flex-col justify-center desktop:mb-[120px] mobile:mb-[60px] smallMobile:mb-[60px]"
         >
           <h2
-            class="font-bold desktop:text-6xl mobile:text-[24px] desktop:leading-[54px] mobile:leading-8 text-blackText desktop:mb-[90px] mobile:mb-[30px] uppercase text-center"
+            class="font-bold desktop:text-6xl mobile:text-[24px] smallMobile::text-[24px] desktop:leading-[54px] mobile:leading-8 smallMobile:leading-8 text-blackText desktop:mb-[90px] mobile:mb-[30px] smallMobile:mb-[30px] uppercase text-center"
           >
             Перший крок до нової роботи - з
             <span class="text-text">JobTracker!</span>
           </h2>
           <p
-            class="font-medium desktop:text-3xl mobile:text-sm text-blackText desktop:leading-[43px] mobile:leading-6 mb-[60px] text-center"
+            class="font-medium desktop:text-3xl mobile:text-sm smallMobile:text-sm text-blackText desktop:leading-[43px] mobile:leading-6 leading-6 desktop:mb-[60px] mobile:mb-[60px] smallMobile:mb-[30px] text-center"
           >
             Перетвори хаос із десятками резюме на організований процес. Спробуй
             <span class="text-text">JobTracker</span> і будь на крок попереду.
           </p>
           <a
             href="https://job-tracker-frontend-three.vercel.app/vacancies"
-            class="desktop:w-[628px] mobile:w-[463px] desktop:h-[51px] mobile:h-[46px] mx-auto border border-blackText rounded-xl py-3 desktop:px-12 mobile:px-5 bg-btn text-blackText desktop:font-bold mobile:font-medium desktop:text-md mobile:text-m desktop:leading-[27px] mobile:leading-[22px]"
+            class="desktop:w-[628px] mobile:w-[463px] smallMobile:w-[243px] smallMobile:h-[40px] desktop:h-[51px] mobile:h-[46px] mx-auto border border-blackText rounded-xl py-3 desktop:px-12 mobile:px-5 smallMobile:px-3 bg-btn text-blackText desktop:font-bold mobile:font-medium smallMobile:font-medium desktop:text-md mobile:text-m smallMobile:text-xs desktop:leading-[27px] mobile:leading-[22px] smallMobile:leading-4"
             >ПОЧАТИ СВІЙ ШЛЯХ У
             <span class="text-textheroBlue font-bold"
-              >JOBTRACKER БЕЗКОШТОВНО</span
+              >JOBTRACKER
+              <span class="smallMobile:hidden mobile:inline desktop:inline"
+                >БЕЗКОШТОВНО</span
+              ></span
             ></a
           >
         </div>
       </section>
     </main>
     <footer>
-      <div class="container desktop:px-[118px] mobile:px-[24px] mx-auto">
+      <div
+        class="container desktop:px-[118px] mobile:px-6 smallMobile:px-6 mx-auto"
+      >
         <p
-          class="text-center desktop:mb-[60px] mobile:mb-[30px] font-bold desktop:text-3xl mobile:text-sm text-blackText desktop:leading-[43px] mobile:leading-6"
+          class="text-center desktop:mb-[60px] mobile:mb-[30px] smallMobile:mb-[30px] font-bold desktop:text-3xl mobile:text-sm smallMobile:text-sm text-blackText desktop:leading-[43px] mobile:leading-6 smallMobile:leading-6"
         >
           Для додаткової інформації ви можете зв'язатися з нами в соц. мережах
         </p>
         <ul
-          class="grid desktop:grid-cols-4 mobile:grid-cols-2 desktop:gap-[136px] mobile:gap-[30px] desktop:mb-[108px] mb-[30px]"
+          class="grid desktop:grid-cols-4 mobile:grid-cols-2 smallMobile:grid-cols-2 desktop:gap-[136px] mobile:gap-[30px] smallMobile:gap-[30px] desktop:mb-[108px] mobile:mb-[30px] smallMobile:mb-[30px]"
         >
           <li class="flex flex-row gap-[10px] mx-auto items-center">
             <!-- <svg class="w-[38px] h-[38px]">
@@ -601,7 +610,7 @@
             <img
               src="./src/assets/Inst.png"
               alt="instagram"
-              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px]"
+              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
             />
             <p class="font-medium text-md leading-[27px] text-blackText">
               Instagram
@@ -609,7 +618,7 @@
           </li>
           <li class="flex flex-row gap-[10px] mx-auto items-center">
             <svg
-              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px]"
+              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
             >
               <use href="./src/assets/symbol-defs.svg#icon-teleg"></use>
             </svg>
@@ -619,7 +628,7 @@
           </li>
           <li class="flex flex-row gap-[10px] mx-auto items-center">
             <svg
-              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px]"
+              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
             >
               <use href="./src/assets/symbol-defs.svg#icon-link"></use>
             </svg>
@@ -629,7 +638,7 @@
           </li>
           <li class="flex flex-row gap-[10px] mx-auto items-center">
             <svg
-              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px]"
+              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
             >
               <use href="./src/assets/symbol-defs.svg#icon-Googleicon"></use>
             </svg>
@@ -638,7 +647,9 @@
             </p>
           </li>
         </ul>
-        <p class="text-center">
+        <p
+          class="text-center smallMobile:text-[10px] mobile:text-xs desktop:text-m desktop:font-medium desktop:leading-[22px] mobile:leading-4 smallMobile:leading-[14px]"
+        >
           Розробка Baza Trainee Ukraine 2024 © Усі права захищені
         </p>
       </div>
