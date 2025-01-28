@@ -21,6 +21,7 @@ export default {
       sm: "18px",
       md: "20px",
       l: "22px",
+      lrg: "24px",
       lg: "26px",
       xl: "28px",
       "2xl": "30px",
@@ -49,6 +50,7 @@ export default {
         filters: "0 0 3px 0 rgba(0, 0, 0, 0.2)",
         filtersmobile: "0 0 2px 0 rgba(0, 0, 0, 0.2)",
         filterssmallmobile: "0 0 1px 0 rgba(0, 0, 0, 0.2)",
+        btnhover: "0 0 13px 0 rgba(40, 141, 213,1);",
       },
       colors: {
         backgroundMain: "#fdfeff",
