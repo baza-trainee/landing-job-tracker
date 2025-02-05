@@ -14,16 +14,35 @@
     <title>JobTracker</title>
     <style>
       .tooltip {
-        @apply absolute bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 transition-opacity duration-300;
+        @apply absolute bg-backgroundMain border-[2.5px] border-text text-blackText font-bold text-xs p-[6px] rounded-bl-[10px] rounded-tl-[10px] rounded-tr-[10px] opacity-0 transition-opacity duration-300;
       }
       .icon-container:hover .tooltip {
         @apply opacity-100;
       }
       .icon-container svg {
-        @apply opacity-50 transition-opacity duration-500;
+        @apply blur-[5px] transition-opacity duration-500;
       }
       .icon-container:hover svg {
-        @apply opacity-100;
+        @apply blur-0;
+      }
+      .expand-left:hover {
+        transform: scaleX(1.1) scaleY(1.1) translateX(-10px);
+      }
+      .expand-right:hover {
+        transform: scaleX(1.1) scaleY(1.1) translateX(10px);
+      }
+      .expand-bottom-left:hover {
+        transform: scaleX(1.1) scaleY(1.1) translateX(-10px) translateY(10px);
+      }
+      .expand-bottom:hover {
+        transform: scaleX(1.1) scaleY(1.1) translateY(20px);
+      }
+      .expand-right:hover {
+        transform: scaleX(1.1) scaleY(1.1) translateX(20px);
+      }
+
+      .expand-center:hover {
+        transform: scaleX(1.1) scaleY(1.1);
       }
     </style>
   </head>
@@ -556,7 +575,7 @@
       </section>
       <section id="analitics">
         <div
-          class="container mx-auto desktop:px-[118px] mobile:px-6 smallMobile:px-6 flex desktop:flex-row desktop:gap-[116px] mobile:flex-col smallMobile:flex-col desktop:mt-[180px] mobile:mt-[90px] smallMobile:mt-[60px] desktop:mb-[60px] mobile:mb-[60px] smallMobile:mb-[60px] relative"
+          class="container mx-auto desktop:max-h-[600px] desktop:px-[118px] mobile:px-6 smallMobile:px-6 flex desktop:flex-row desktop:gap-[116px] mobile:flex-col smallMobile:flex-col desktop:mt-[180px] mobile:mt-[90px] smallMobile:mt-[60px] desktop:mb-[120px] mobile:mb-[60px] smallMobile:mb-[60px] relative"
         >
           <div
             class="flex flex-col justify-center desktop:items-start mobile:items-center smallMobile:items-center"
@@ -588,67 +607,77 @@
           />
 
           <div
-            class="mobile:hidden smallMobile:hidden desktop:flex items-center justify-center min-h-screen"
+            class="mobile:hidden smallMobile:hidden desktop:flex items-center justify-center"
           >
-            <div class="flex space-x-6 relative">
+            <div class="relative max-w-[590px] h-[605px]">
               <div
-                class="icon-container relative transition-transform transform hover:scale-125 duration-500 ease-in-out"
+                class="icon-container w-[195px] relative transition-transform transform hover:scale-125 duration-500 expand-right left-[380px] top-[20px]"
               >
-                <svg width="94" height="77">
+                <svg width="193" height="60" class="">
                   <use href="./src/assets/symbol-defs.svg#icon-1"></use>
                 </svg>
-                <div class="tooltip left-1/2 -translate-x-1/2 top-full mt-2">
-                  Круг
+                <div
+                  class="tooltip w-[288px] h-[33px] left-[0px] translate-x-1/2 mt-2"
+                >
+                  <p>Невеликі мотивуючі передбачення від нас</p>
+                  <svg width="20" height="20" class="">
+                    <use href="./src/assets/symbol-defs.svg#icon-emoji"></use>
+                  </svg>
                 </div>
               </div>
               <div
-                class="icon-container relative transition-transform transform hover:scale-125 duration-500 ease-in-out"
+                class="icon-container w-[370px] relative transition-transform transform hover:scale-125 duration-500 expand-left left-0 top-[-40px]"
               >
-                <svg width="94" height="77">
+                <svg width="364" height="60">
                   <use href="./src/assets/symbol-defs.svg#icon-2"></use>
                 </svg>
-                <div class="tooltip left-1/2 -translate-x-1/2 top-full mt-2">
-                  Квадрат
+                <div class="tooltip left-0 -translate-x-1/2 w-[229px] mt-2">
+                  Дивіться свій шлях до роботи мрії за загальною кількістю
+                  надісланих відгуків на вакансії
                 </div>
               </div>
               <div
-                class="icon-container relative transition-transform transform hover:scale-125 duration-500 ease-in-out"
+                class="icon-container w-[450px] h-[300px] relative transition-transform transform hover:scale-125 duration-500 expand-bottom-left left-[-60px] top-[-20px]"
               >
-                <svg width="94" height="77">
+                <svg width="450" height="300">
                   <use href="./src/assets/symbol-defs.svg#icon-3"></use>
                 </svg>
-                <div class="tooltip left-1/2 -translate-x-1/2 top-full mt-2">
-                  Треугольник
+                <div class="tooltip left-0 -translate-x-1/2 w-[288px] mt-2">
+                  Позначайте дати, введіть календар і плануйте співбесіди та
+                  тестові завдання
                 </div>
               </div>
               <div
-                class="icon-container relative transition-transform transform hover:scale-125 duration-500 ease-in-out"
+                class="icon-container relative transition-transform transform hover:scale-125 duration-500 expand-bottom right-[-310px] top-[-310px]"
               >
-                <svg width="94" height="77">
+                <svg width="300" height="374">
                   <use href="./src/assets/symbol-defs.svg#icon-4"></use>
                 </svg>
-                <div class="tooltip left-1/2 -translate-x-1/2 top-full mt-2">
-                  Круг
+                <div class="tooltip left-2/4 -translate-x-1/2 w-[188px] mt-2">
+                  Відстежуйте успіх! Дізнайтеся, на якому етапі перебувають ваші
+                  відгуки і просувайтеся до своєї мрії
                 </div>
               </div>
               <div
-                class="icon-container relative transition-transform transform hover:scale-125 duration-500 ease-in-out"
+                class="icon-container relative transition-transform transform hover:scale-125 duration-500 expand-center top-[-310px]"
               >
-                <svg width="94" height="77">
+                <svg width="568" height="181">
                   <use href="./src/assets/symbol-defs.svg#icon-5"></use>
                 </svg>
-                <div class="tooltip left-1/2 -translate-x-1/2 top-full mt-2">
-                  Квадрат
+                <div class="tooltip left-1/2 -translate-x-1/2 w-[280px] mt-2">
+                  Проаналізуйте на якому етапі у вас найбільше проблем, зробіть
+                  роботу над помилками та отримуйте офер вашої мрії!
                 </div>
               </div>
               <div
-                class="icon-container relative transition-transform transform hover:scale-125 duration-500 ease-in-out"
+                class="icon-container relative transition-transform transform hover:scale-125 duration-500 expand-right top-[-650px]"
               >
-                <svg width="94" height="77">
+                <svg width="598" height="187">
                   <use href="./src/assets/symbol-defs.svg#icon-6"></use>
                 </svg>
-                <div class="tooltip left-1/2 -translate-x-1/2 top-full mt-2">
-                  Треугольник
+                <div class="tooltip left-1/2 -translate-x-1/2 w-[230px] mt-2">
+                  Переглядайте графік вашої активності та виділіть найактивніші
+                  дні HR-ів
                 </div>
               </div>
             </div>
