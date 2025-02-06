@@ -652,7 +652,7 @@
                 </div>
               </div>
               <div
-                class="z-0 icon-container relative transition-transform transform hover:scale-110 duration-500 expand-bottom right-[-310px] top-[-310px]"
+                class="z-0 w-[300px] icon-container relative transition-transform transform hover:scale-110 duration-500 expand-bottom right-[-310px] top-[-310px]"
               >
                 <svg width="300" height="374">
                   <use href="./src/assets/symbol-defs.svg#icon-4"></use>
@@ -736,57 +736,79 @@
         <ul
           class="grid desktop:grid-cols-4 mobile:grid-cols-2 smallMobile:grid-cols-2 desktop:gap-[136px] mobile:gap-[30px] smallMobile:gap-[30px] desktop:mb-[108px] mobile:mb-[30px] smallMobile:mb-[30px]"
         >
-          <li class="flex flex-row gap-[10px] mx-auto items-center">
-            <!-- <svg class="w-[38px] h-[38px]">
-              <use href="./src/assets/symbol-defs.svg#icon-Inst"></use>
-            </svg> -->
-            <img
-              src="./src/assets/Inst.png"
-              srcset="Inst@2x.png 2x"
-              alt="instagram"
-              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
-            />
-            <p class="font-medium text-md leading-[27px] text-blackText">
-              Instagram
-            </p>
-          </li>
-          <li class="flex flex-row gap-[10px] mx-auto items-center">
-            <svg
-              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              class="flex flex-row gap-[10px] mx-auto items-center"
             >
-              <use href="./src/assets/symbol-defs.svg#icon-teleg"></use>
-            </svg>
-            <p class="font-medium text-md leading-[27px] text-blackText">
-              Telegram
-            </p>
+              <img
+                src="./src/assets/Inst.png"
+                srcset="Inst@2x.png 2x"
+                alt="instagram"
+                class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
+              />
+              <p class="font-medium text-md leading-[27px] text-blackText">
+                Instagram
+              </p>
+            </a>
           </li>
-          <li class="flex flex-row gap-[10px] mx-auto items-center">
-            <svg
-              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
+          <li>
+            <a
+              href="https://web.telegram.org/"
+              class="flex flex-row gap-[10px] mx-auto items-center"
             >
-              <use href="./src/assets/symbol-defs.svg#icon-link"></use>
-            </svg>
-            <p class="font-medium text-md leading-[27px] text-blackText">
-              LinkedIn
-            </p>
+              <svg
+                class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
+              >
+                <use href="./src/assets/symbol-defs.svg#icon-teleg"></use>
+              </svg>
+              <p class="font-medium text-md leading-[27px] text-blackText">
+                Telegram
+              </p>
+            </a>
           </li>
-          <li class="flex flex-row gap-[10px] mx-auto items-center">
-            <svg
-              class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
+          <li>
+            <a
+              href="https://www.linkedin.com/"
+              class="flex flex-row gap-[10px] mx-auto items-center"
             >
-              <use href="./src/assets/symbol-defs.svg#icon-Googleicon"></use>
-            </svg>
-            <p class="font-medium text-md leading-[27px] text-blackText">
-              Gmail
-            </p>
+              <svg
+                class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
+              >
+                <use href="./src/assets/symbol-defs.svg#icon-link"></use>
+              </svg>
+              <p class="font-medium text-md leading-[27px] text-blackText">
+                LinkedIn
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://mail.google.com/"
+              class="flex flex-row gap-[10px] mx-auto items-center"
+            >
+              <svg
+                class="desktop:w-[38px] desktop:h-[38px] mobile:w-[30px] mobile:h-[30px] smallMobile:w-[30px] smallMobile:h-[30px]"
+              >
+                <use href="./src/assets/symbol-defs.svg#icon-Googleicon"></use>
+              </svg>
+              <p class="font-medium text-md leading-[27px] text-blackText">
+                Gmail
+              </p></a
+            >
           </li>
         </ul>
         <p
-          class="text-center smallMobile:text-[10px] mobile:text-xs desktop:text-m desktop:font-medium desktop:leading-[22px] mobile:leading-4 smallMobile:leading-[14px]"
+          class="text-center smallMobile:text-[10px] mobile:text-xs desktop:text-m desktop:font-medium desktop:leading-[22px] mobile:leading-4 smallMobile:leading-[14px] mb-5"
         >
-          Розробка Baza Trainee Ukraine 2024 © Усі права захищені
+          Розробка Baza Trainee Ukraine <span id="currentYear"></span> © Усі
+          права захищені
         </p>
       </div>
     </footer>
   </body>
+  <script>
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+  </script>
 </html>
