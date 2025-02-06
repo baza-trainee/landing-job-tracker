@@ -814,10 +814,19 @@
       new Date().getFullYear();
   </script>
   <script>
-    window.addEventListener("scroll", function () {
+    function handleScroll() {
       const icon = document.querySelector("#hero svg");
       const scrollY = window.scrollY;
-      icon.style.transform = `translateY(${scrollY}px)`;
-    });
+
+      if (window.innerWidth >= 1440) {
+        icon.style.transform = `translateY(${scrollY}px)`;
+      } else {
+        icon.style.transform = "translateY(0px)";
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("resize", handleScroll);
   </script>
 </html>
