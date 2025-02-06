@@ -14,7 +14,7 @@
     <title>JobTracker</title>
     <style>
       .tooltip {
-        @apply absolute bg-backgroundMain border-[2.5px] border-text text-blackText font-bold text-xs p-[6px] rounded-bl-[10px] rounded-tl-[10px] rounded-tr-[10px] opacity-0 transition-opacity duration-300;
+        @apply absolute bg-backgroundMain border-[2.5px] border-text text-blackText font-bold text-xs p-[6px]  opacity-0 transition-opacity duration-300;
       }
       .icon-container:hover .tooltip {
         @apply opacity-100;
@@ -611,13 +611,13 @@
           >
             <div class="relative max-w-[590px] h-[605px]">
               <div
-                class="icon-container w-[195px] relative transition-transform transform hover:scale-125 duration-500 expand-right left-[380px] top-[20px]"
+                class="icon-container group w-[195px] relative transition-transform transform hover:scale-125 duration-500 expand-right left-[380px] top-[20px]"
               >
                 <svg width="193" height="60" class="">
                   <use href="./src/assets/symbol-defs.svg#icon-1"></use>
                 </svg>
                 <div
-                  class="tooltip w-[288px] h-[33px] left-[0px] translate-x-1/2 mt-2"
+                  class="tooltip absolute left-[-150px] top-[-35px] w-[295px] h-[33px] p-2 flex items-center space-x-2 rounded-bl-[10px] rounded-tl-[10px] rounded-tr-[10px]"
                 >
                   <p>Невеликі мотивуючі передбачення від нас</p>
                   <svg width="20" height="20" class="">
@@ -631,29 +631,35 @@
                 <svg width="364" height="60">
                   <use href="./src/assets/symbol-defs.svg#icon-2"></use>
                 </svg>
-                <div class="tooltip left-0 -translate-x-1/2 w-[229px] mt-2">
+                <div
+                  class="tooltip absolute left-[-100px] top-[-60px] -translate-x-1/2 w-[229px] rounded-bl-[10px] rounded-tl-[10px] rounded-tr-[10px]"
+                >
                   Дивіться свій шлях до роботи мрії за загальною кількістю
-                  надісланих відгуків на вакансії
+                  надісланих відгуків на вакансії.
                 </div>
               </div>
               <div
-                class="icon-container w-[450px] h-[300px] relative transition-transform transform hover:scale-125 duration-500 expand-bottom-left left-[-60px] top-[-20px]"
+                class="z-50 icon-container w-[450px] h-[300px] relative transition-transform transform hover:scale-125 duration-500 expand-bottom-left left-[-60px] top-[-20px]"
               >
                 <svg width="450" height="300">
                   <use href="./src/assets/symbol-defs.svg#icon-3"></use>
                 </svg>
-                <div class="tooltip left-0 -translate-x-1/2 w-[288px] mt-2">
+                <div
+                  class="tooltip absolute left-[230px] top-[200px] -translate-x-1/2 w-[288px] mt-2 rounded-bl-[10px] rounded-br-[10px]"
+                >
                   Позначайте дати, введіть календар і плануйте співбесіди та
                   тестові завдання
                 </div>
               </div>
               <div
-                class="icon-container relative transition-transform transform hover:scale-125 duration-500 expand-bottom right-[-310px] top-[-310px]"
+                class="z-0 icon-container relative transition-transform transform hover:scale-125 duration-500 expand-bottom right-[-310px] top-[-310px]"
               >
                 <svg width="300" height="374">
                   <use href="./src/assets/symbol-defs.svg#icon-4"></use>
                 </svg>
-                <div class="tooltip left-2/4 -translate-x-1/2 w-[188px] mt-2">
+                <div
+                  class="tooltip left-[155px] top-[265px] -translate-x-1/2 w-[188px] mt-2 rounded-bl-[10px] rounded-br-[10px]"
+                >
                   Відстежуйте успіх! Дізнайтеся, на якому етапі перебувають ваші
                   відгуки і просувайтеся до своєї мрії
                 </div>
@@ -664,7 +670,9 @@
                 <svg width="568" height="181">
                   <use href="./src/assets/symbol-defs.svg#icon-5"></use>
                 </svg>
-                <div class="tooltip left-1/2 -translate-x-1/2 w-[280px] mt-2">
+                <div
+                  class="tooltip left-1/2 top-[100px] -translate-x-1/2 w-[280px] mt-2 rounded-bl-[10px] rounded-br-[10px]"
+                >
                   Проаналізуйте на якому етапі у вас найбільше проблем, зробіть
                   роботу над помилками та отримуйте офер вашої мрії!
                 </div>
@@ -675,7 +683,9 @@
                 <svg width="598" height="187">
                   <use href="./src/assets/symbol-defs.svg#icon-6"></use>
                 </svg>
-                <div class="tooltip left-1/2 -translate-x-1/2 w-[230px] mt-2">
+                <div
+                  class="tooltip left-3/4 top-1/2 -translate-x-1/2 w-[230px] mt-2 rounded-bl-[10px] rounded-tr-[10px] rounded-br-[10px]"
+                >
                   Переглядайте графік вашої активності та виділіть найактивніші
                   дні HR-ів
                 </div>
