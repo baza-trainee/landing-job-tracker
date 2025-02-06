@@ -57,9 +57,11 @@
           <div
             class="absolute desktop:left-[20px] desktop:top-[-68px] mobile:top-[-90px] mobile:right-6 smallMobile:top-[-90px] smallMobile:right-0"
           >
-            <svg width="94" height="77">
-              <use href="./src/assets/symbol-defs.svg#icon-Logo"></use>
-            </svg>
+            <a href="https://job-tracker-frontend-three.vercel.app/vacancies">
+              <svg width="94" height="77">
+                <use href="./src/assets/symbol-defs.svg#icon-Logo"></use>
+              </svg>
+            </a>
           </div>
           <h1
             class="font-bold mx-auto desktop:w-full mobile:w-[385px] smallMobile:w-[250px] text-text text-center mb-[30px] desktop:text-6xl desktop:leading-[54px] desktop:uppercase mobile:text-lrg mobile:leading-8 mobile:normal-case mobile:mb-6 smallMobile:text-l smallMobile:leading-8 smallMobile:normal-case smallMobile:mx-auto"
@@ -263,7 +265,7 @@
               class="bg-white desktop:border-[2.33px] mobile:border-[2.28px] smallMobile:border-[1.68px] border-addbtn border-solid desktop:rounded-tr-[7px] desktop:rounded-br-[7px] desktop:rounded-bl-[7px] mobile:rounded-tr-[7px] mobile:rounded-br-[7px] mobile:rounded-bl-[7px] smallMobile:rounded-tr-[5px] smallMobile:rounded-br-[5px] smallMobile:rounded-bl-[5px] desktop:w-[566px] mobile:w-[552px] smallMobile:w-[310px] desktop:pt-[32px] mobile:pt-[32px] smallMobile:pt-[23px] desktop:pr-[14px] desktop:pb-[18px] desktop:pl-[14px] mobile:pr-[14px] mobile:pb-[18px] mobile:pl-[14px] smallMobile:pr-[10px] smallMobile:pb-[13px] smallMobile:pl-[10px]"
             >
               <img
-                src="./src/assets/screen.jpg"
+                src="./src/assets/Frame.png"
                 srcset="screen@2x.png 2x"
                 alt="screen"
               />
@@ -810,5 +812,12 @@
   <script>
     document.getElementById("currentYear").textContent =
       new Date().getFullYear();
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const icon = document.querySelector("#hero svg");
+      const scrollY = window.scrollY;
+      icon.style.transform = `translateY(${scrollY}px)`;
+    });
   </script>
 </html>
